@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="zYMNeDn9zSb2zRkGTDrFelV7OJ45vUPlXFknOjOr">
+  <title>Admin Panel | Starbuy</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="stylesheet" href="/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
+  <link rel="stylesheet" href="/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/chosen.min.css">
+  <link rel="stylesheet" href="/css/app.min.css?v=93">
+  <link rel="stylesheet" href="/css/pagination.css">
+</head>
+
+<body data-sa-theme="7">
+  <main class="main">
+<header class="header">
+      <div class="navigation-trigger hidden-xl-up" data-sa-action="aside-open" data-sa-target=".sidebar">
+        <i class="zmdi zmdi-menu"></i>
+      </div>
+      <div class="logo hidden-sm-down">
+        <h1>
+          <a href="#"><img src="/images/logo.png" class="logo-text-1" /></a>
+        </h1>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="scrollbar-inner">
+        <div class="user">
+          <div class="user__info" data-toggle="dropdown">
+            <div>
+              <div class="user__name">Admin Panel</div>
+            </div>
+          </div>
+        </div>
+
+                
+        <ul class="navigation">
+
+                                    <li class="@photogalleryactive "><a href="/adminDashboard"><i class="zmdi zmdi-view-dashboard"></i> Dashboard</a></li>
+                      
+                      <li class="@photogalleryactive "><a href="/users"><i class="fa fa-users"></i> Users Details</a></li>
+          
+                      <li class="@photogalleryactive "><a href="/usersBalance"><i class="zmdi zmdi-balance-wallet"></i>Users Balance</a></li>
+          
+                                    <li class="@photogalleryactive "><a href="/kycData"><i class="zmdi zmdi-badge-check"></i> KYC Submission (7)</a>
+              </li>
+                      
+                      <li class="@photogalleryactive ">
+            	<a href="/tradeWallet"><i class="fa fa-bank"></i> Income & Expense Details</a>
+            </li>
+          
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-arrow-down"></i> Deposit History (3)</a>
+                <ul>
+                  <div class="sublistsearcbbg">
+                    <div class="searchcoinbg">
+                      <input type="text" class="form-control" id="myInput" onkeyup="mySearchFunction('myUL', 'myInput')" placeholder="Search coin name..." autocomplete="off">
+                    </div>
+                    <div id="myUL">
+                                                                  <li class="@colorsactive"><a href="/deposit/BTC" class=""><i class="fa fa-arrow-right"></i> BTC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/DOGE" class=""><i class="fa fa-arrow-right"></i> DOGE </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/BNB" class=""><i class="fa fa-arrow-right"></i> BNB </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/SOL" class=""><i class="fa fa-arrow-right"></i> SOL </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ADA" class=""><i class="fa fa-arrow-right"></i> ADA </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/XLM" class=""><i class="fa fa-arrow-right"></i> XLM </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/DOT" class=""><i class="fa fa-arrow-right"></i> DOT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ZAR" class=""><i class="fa fa-arrow-right"></i> ZAR  (3) </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USD" class=""><i class="fa fa-arrow-right"></i> USD  (3) </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/DAI" class=""><i class="fa fa-arrow-right"></i> DAI </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/HEX" class=""><i class="fa fa-arrow-right"></i> HEX </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDC" class=""><i class="fa fa-arrow-right"></i> USDC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/SHIB" class=""><i class="fa fa-arrow-right"></i> SHIB </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LUNA" class=""><i class="fa fa-arrow-right"></i> LUNA </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/UST" class=""><i class="fa fa-arrow-right"></i> UST </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/WBTC" class=""><i class="fa fa-arrow-right"></i> WBTC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/UNI" class=""><i class="fa fa-arrow-right"></i> UNI </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/MANA" class=""><i class="fa fa-arrow-right"></i> MANA </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/APE" class=""><i class="fa fa-arrow-right"></i> APE </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/AXS" class=""><i class="fa fa-arrow-right"></i> AXS </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/QNT" class=""><i class="fa fa-arrow-right"></i> QNT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/AAVE" class=""><i class="fa fa-arrow-right"></i> AAVE </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/SAND" class=""><i class="fa fa-arrow-right"></i> SAND </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/WFLOW" class=""><i class="fa fa-arrow-right"></i> WFLOW </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/EOS" class=""><i class="fa fa-arrow-right"></i> EOS </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/FRAX" class=""><i class="fa fa-arrow-right"></i> FRAX </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LUNC" class=""><i class="fa fa-arrow-right"></i> LUNC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/GBP" class=""><i class="fa fa-arrow-right"></i> GBP  (3) </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LBR" class=""><i class="fa fa-arrow-right"></i> LBR </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LEO" class=""><i class="fa fa-arrow-right"></i> LEO </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/VET" class=""><i class="fa fa-arrow-right"></i> VET </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/STR" class=""><i class="fa fa-arrow-right"></i> STR </a></li>
+                                                                </div>
+                  </div>
+                </ul>
+              </li>
+                      
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-arrow-up"></i> External Withdraw History (11) </a>
+                 <ul>
+                  <div class="sublistsearcbbg">
+                    <div class="searchcoinbg">
+                      
+                    </div>
+                    <div id="myUL1">
+                                            <li class="@colorsactive"><a href="/withdraw/BTC" class=""><i class="fa fa-arrow-right"></i> BTC  (3) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/DOGE" class=""><i class="fa fa-arrow-right"></i> DOGE </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/BNB" class=""><i class="fa fa-arrow-right"></i> BNB  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/SOL" class=""><i class="fa fa-arrow-right"></i> SOL  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ADA" class=""><i class="fa fa-arrow-right"></i> ADA </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/XLM" class=""><i class="fa fa-arrow-right"></i> XLM </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/DOT" class=""><i class="fa fa-arrow-right"></i> DOT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ZAR" class=""><i class="fa fa-arrow-right"></i> ZAR </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USD" class=""><i class="fa fa-arrow-right"></i> USD </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/DAI" class=""><i class="fa fa-arrow-right"></i> DAI </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/HEX" class=""><i class="fa fa-arrow-right"></i> HEX </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDC" class=""><i class="fa fa-arrow-right"></i> USDC </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/SHIB" class=""><i class="fa fa-arrow-right"></i> SHIB </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LUNA" class=""><i class="fa fa-arrow-right"></i> LUNA </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/UST" class=""><i class="fa fa-arrow-right"></i> UST </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/WBTC" class=""><i class="fa fa-arrow-right"></i> WBTC </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/UNI" class=""><i class="fa fa-arrow-right"></i> UNI </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/MANA" class=""><i class="fa fa-arrow-right"></i> MANA </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/APE" class=""><i class="fa fa-arrow-right"></i> APE </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/AXS" class=""><i class="fa fa-arrow-right"></i> AXS </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/QNT" class=""><i class="fa fa-arrow-right"></i> QNT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/AAVE" class=""><i class="fa fa-arrow-right"></i> AAVE </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/SAND" class=""><i class="fa fa-arrow-right"></i> SAND </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/WFLOW" class=""><i class="fa fa-arrow-right"></i> WFLOW </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/EOS" class=""><i class="fa fa-arrow-right"></i> EOS </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/FRAX" class=""><i class="fa fa-arrow-right"></i> FRAX </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LUNC" class=""><i class="fa fa-arrow-right"></i> LUNC </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/GBP" class=""><i class="fa fa-arrow-right"></i> GBP </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LBR" class=""><i class="fa fa-arrow-right"></i> LBR  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LEO" class=""><i class="fa fa-arrow-right"></i> LEO  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/VET" class=""><i class="fa fa-arrow-right"></i> VET  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/STR" class=""><i class="fa fa-arrow-right"></i> STR </a></li>
+                                          </div>
+                  </div>
+                </ul>
+              </li>
+                      
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-exchange"></i> Internal Withdraw History </a>
+                 <ul>
+                  <div class="sublistsearcbbg">
+                    <div class="searchcoinbg">
+                      
+                    </div>
+                    <div id="myUL1">
+                                            <li class="@colorsactive"><a href="/internalWithdraw/BTC" class=""><i class="fa fa-arrow-right"></i> BTC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/DOGE" class=""><i class="fa fa-arrow-right"></i> DOGE </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/BNB" class=""><i class="fa fa-arrow-right"></i> BNB </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/SOL" class=""><i class="fa fa-arrow-right"></i> SOL </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ADA" class=""><i class="fa fa-arrow-right"></i> ADA </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/XLM" class=""><i class="fa fa-arrow-right"></i> XLM </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/DOT" class=""><i class="fa fa-arrow-right"></i> DOT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ZAR" class=""><i class="fa fa-arrow-right"></i> ZAR </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USD" class=""><i class="fa fa-arrow-right"></i> USD </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/DAI" class=""><i class="fa fa-arrow-right"></i> DAI </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/HEX" class=""><i class="fa fa-arrow-right"></i> HEX </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDC" class=""><i class="fa fa-arrow-right"></i> USDC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/SHIB" class=""><i class="fa fa-arrow-right"></i> SHIB </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LUNA" class=""><i class="fa fa-arrow-right"></i> LUNA </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/UST" class=""><i class="fa fa-arrow-right"></i> UST </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/WBTC" class=""><i class="fa fa-arrow-right"></i> WBTC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/UNI" class=""><i class="fa fa-arrow-right"></i> UNI </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/MANA" class=""><i class="fa fa-arrow-right"></i> MANA </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/APE" class=""><i class="fa fa-arrow-right"></i> APE </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/AXS" class=""><i class="fa fa-arrow-right"></i> AXS </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/QNT" class=""><i class="fa fa-arrow-right"></i> QNT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/AAVE" class=""><i class="fa fa-arrow-right"></i> AAVE </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/SAND" class=""><i class="fa fa-arrow-right"></i> SAND </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/WFLOW" class=""><i class="fa fa-arrow-right"></i> WFLOW </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/EOS" class=""><i class="fa fa-arrow-right"></i> EOS </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/FRAX" class=""><i class="fa fa-arrow-right"></i> FRAX </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LUNC" class=""><i class="fa fa-arrow-right"></i> LUNC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/GBP" class=""><i class="fa fa-arrow-right"></i> GBP </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LBR" class=""><i class="fa fa-arrow-right"></i> LBR </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LEO" class=""><i class="fa fa-arrow-right"></i> LEO </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/VET" class=""><i class="fa fa-arrow-right"></i> VET </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/STR" class=""><i class="fa fa-arrow-right"></i> STR </a></li>
+                                          </div>
+                  </div>
+                </ul>
+              </li>
+                      
+                          <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-dollar" aria-hidden="true"></i>Orderbook History <span class="pull-right"><i class="fa fa-chevron-down"></i> </span></a>
+                    <ul>
+                        <li class="@photogalleryactive "><a href="/tradeHistory/BUY/BTC/USDT"><i class="fa fa-shopping-cart"></i> Buy Trade History</a></li>
+
+                        <li class="@photogalleryactive "><a href="/tradeHistory/SELL/BTC/USDT"><i class="fa fa-shopping-bag"></i> Sell trade History</a></li>
+
+                        <li class="@photogalleryactive "><a href="/openOrders/BTC/USDT"><i class="fa fa-external-link"></i> Open Orders History</a></li>
+                    </ul>
+                </li>
+            
+                      <li class="navigation__sub navigation__sub--toggled ">
+              <a href="#"><i class="fa fa-stack-exchange" aria-hidden="true"></i>P2P Advertisements <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                  <ul>
+
+                  <li class="@colorsactive ">
+                    <a href="/advertisement/Buy">
+                        <i class="fa fa-arrow-right"></i> Buy Advertisement
+                    </a>
+                  </li>
+
+                  <li class="@colorsactive ">
+                      <a href="/advertisement/Sell"><i class="fa fa-arrow-right"></i> Sell Advertisement
+                      </a>
+                  </li>
+                </ul>
+            </li>
+          
+          <li class="navigation__sub navigation__sub--toggled ">
+              <a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>P2P Trades<span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                  <ul>
+
+                  <li class="@photogalleryactive "><a href="/pendingTrade"><i class="fa fa-arrow-right"></i>Pending Trade</a>
+                  </li>
+
+                  <li class="@photogalleryactive "><a href="/completedTrade"><i class="fa fa-arrow-right"></i></i>Completed Trade</a>
+                  </li>
+
+                  <li class="@photogalleryactive "><a href="/cancelTrade"><i class="fa fa-arrow-right"></i>Cancelled Trade</a>
+                  </li>
+                </ul>
+            </li>
+
+                      <li class="@photogalleryactive "><a href="/disputeTrade"><i class="zmdi zmdi-alert-triangle"></i>Dispute Trade <span class="pull-right">(2)</span></a>
+            </li>
+          
+                      <li class="@photogalleryactive "><a href="/support"><i class="zmdi zmdi-ticket-star"></i> Support Ticket <span class="pull-right"> (0)</span></a></li>
+          
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="zmdi zmdi-code-setting"></i> Commission Settings <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                <ul>
+
+                                                            <li class="@photogalleryactive "><a href="/depositSettings"><i class="fa fa-arrow-right"></i> Deposit Commission</a></li>
+                                      
+                                                            <li class="@photogalleryactive "><a href="/withdrawcryptoSettings"><i class="fa fa-arrow-right"></i> Withdraw Commission</a></li>
+                                      
+                                      <li class="@colorsactive"><a href="/tradeCommissionSettings" class=""><i class="fa fa-arrow-down"></i> P2P Trade Commission</a></li>
+                                  </ul>
+              </li>
+                      
+                      <li class="@photogalleryactive ">
+              <a href="/ercTokenSettings"><i class="fa fa-plus-square"></i>ERC Token Settings</a></li>
+          
+                      <li class="@photogalleryactive ">
+              <a href="/bepTokenSettings"><i class="fa fa-plus-square"></i>BSC Token Settings</a></li>
+          
+          <li class="navigation__sub navigation__sub--toggled ">
+            <a href="#">
+              <i class="fa fa-bank"></i> Company Bank Details
+              <span class="pull-right">
+                <i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span>
+            </a>
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                            <li class="@photogalleryactive ">
+                          <a href="/adminBank/ZAR"><i class="fa fa-arrow-right"></i> ZAR</a>
+                  </li>
+                                                                <li class="@photogalleryactive ">
+                          <a href="/adminBank/USD"><i class="fa fa-arrow-right"></i> USD</a>
+                  </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="@photogalleryactive ">
+                          <a href="/adminBank/GBP"><i class="fa fa-arrow-right"></i> GBP</a>
+                  </li>
+                                                                                                                                                                                                                                                                                          </ul>
+          </li>
+
+                                    <li class="navigation__sub navigation__sub--toggled navigation__sub--active"><a href="#"><i class="zmdi zmdi-assignment-o"></i> Trade Settings <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                <ul>
+                                                            <li class="@colorsactive"><a href="/tradeSettings" class="subactive"><i class="fa fa-arrow-right"></i> Pair Settings </a></li>
+                                                      </ul>
+              </li>
+                      
+                    <li class="navigation__sub navigation__sub--toggled ">
+              <a href="#">
+                  <i class="zmdi zmdi-card-giftcard" aria-hidden="true"></i>Commission History
+                  <span class="pull-right">
+                      <i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i>
+                  </span>
+              </a>
+              <ul>
+                  <li class="@colorsactive">
+                      <a href="/trade-commission" class="">
+                        <i class="fa fa-arrow-right"></i> P2P Trade
+                      </a>
+                  </li>
+              </ul>
+          </li>
+          
+          <li class="@photogalleryactive ">
+              <a href="/paymentmethod">
+                  <i class="fa fa-bank"></i> Payment Method
+              </a>
+          </li>
+
+                      <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-history" aria-hidden="true"></i>CMS Settings <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                <ul>
+                                      <li class="@colorsactive"><a href="/aboutus" class=""><i class="fa fa-arrow-right"></i> About Us </a></li> 
+                  
+                                      <li class="@colorsactive"><a href="/privacy" class=""><i class="fa fa-arrow-right"></i> Privacy Policy </a></li>
+                  
+                                      <li class="@colorsactive"><a href="/terms" class=""><i class="fa fa-arrow-right"></i> Terms & Conditions </a></li>
+                  
+                  
+                            <li class="@colorsactive">
+                                        <a href="/blogs" class="">
+                                            <i class="fa fa-arrow-right"></i> Blogs
+                                        </a>
+                                 </li>
+                       
+
+                                      <li class="@colorsactive"><a href="/features" class=""><i class="fa fa-arrow-right"></i> Features </a></li>
+                  
+                                       <li class="@colorsactive"><a href="/followus" class=""><i class="fa fa-arrow-right"></i> Follow Us </a></li>
+                  
+                                      <li class="@colorsactive"><a href="/howwork" class=""><i class="fa fa-arrow-right"></i> How It Works</a></li>
+                  
+                                      <li class="@colorsactive"><a href="/faq" class=""><i class="fa fa-arrow-right"></i> FAQ </a></li>
+                                                      
+                    <li class="@colorsactive"><a href="/newsletter" class=""><i class="fa fa-arrow-right"></i> Newsletter</a></li>
+                     
+                       <li class="@colorsactive"><a href="/whitepaper" class=""> <i class="fa fa-arrow-right"></i>White Paper </a></li>
+                 
+                </ul>
+            </li>
+          
+                      <li class="@photogalleryactive "><a href="/security"><i class="zmdi zmdi-settings" aria-hidden="true"></i>Security Settings </a></li>
+          
+           <li class="@photogalleryactive "><a href="/subscribers"><i class="fa fa-rocket" aria-hidden="true"></i>Subscribers </a></li>
+
+          <li class="@photogalleryactive">
+            <a href="/logout">
+              <i class="zmdi zmdi-power-off"></i>  Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <section class="content">
+  <header class="content__title">
+    <h1>Trade Pair Settings</h1>
+  </header>
+  <div class="card">
+    <div class="card-body">
+
+                  
+
+            
+      <form method="post" autocomplete="off">
+        <div class="row searchnrow">
+          <div class=" col-md-4">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" class="form-control allletterwithnumber" id="system-search" placeholder="Search Pair">
+              </div>
+            </div>
+          </div>
+          <div class=" col-md-4">
+            <a href="/addtradeSettings" class="btn btn-success btn-md"><i class="fa fa-plus"></i> Add Pair</a><br /><br />
+          </div>
+        </div>
+      </form>
+
+      <div class="table-responsive">
+        <table class="table table-list-search" id="dows">
+          <thead>
+            <tr>
+              <th>S.No</th>
+              <th>Pair</th>
+              <th>Buy Trade Fee (%)</th>
+              <th>Sell Trade Fee (%)</th>
+              <th>Type</th>
+              <th>Pair Status</th>
+              <!-- <th>Liquidity Status</th> -->
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+                                                <tr>
+              <td>1</td>
+              <td class="coinnamesearch">BTC/USDT</td>
+              <td>0.20000000</td>
+              <td>0.20000000</td>
+              <td>Binance</td>
+              <td class="> text-danger "> Disabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6Ik9PMXl1Qlp4cldlRlwvS3VpdnBDVEhnPT0iLCJ2YWx1ZSI6ImdEdExsbTJidmFZN2EzMkJnMmxueGc9PSIsIm1hYyI6IjAyMjY1YmFhZjRkNGFhOWZlZjYyOGFiY2FkNjZjN2ZlNzdkNTM5ZDJjZGNlYTAxNTg3MTgzZTc1YWM2YjU2MGUifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTrade/eyJpdiI6IkRkNFhNd0RnY1phOTFuOWlNZHJmVlE9PSIsInZhbHVlIjoibU10MW1WMHFcL2loZUdoODlmVkNjckE9PSIsIm1hYyI6ImZiMWUyOTYwODA0MWQ5OTYwZTY4N2JiMDgzNTc3YThiNTJhZmExZDdjMzNiMjMwYzI3OTk2YjMwNTFkMWJkNmYifQ=="><i class="fa fa-check-square-o"></i> Activate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6IlFNamIwS25NN1AwYWRcL2x5clwvVng3dz09IiwidmFsdWUiOiJmbVwvK2N3V2FlMldpM3pJdVQ2UmVjUT09IiwibWFjIjoiMDJkMWQxZDFlMWE3ZGQ3MTNkMDZjMDQ5MDk3YTQ0OTQwMGE2YzA3OTI4ZWEyODg5MDEzNmZkNzRlMDg0YmExNCJ9"><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>2</td>
+              <td class="coinnamesearch">BTC/ZAR</td>
+              <td>0.00000000</td>
+              <td>0.10000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6ImZFM3dPN1IwNnhUVEM1OVd5SlZnNGc9PSIsInZhbHVlIjoiWE1JNlJpc1RKWWRmcEpsRHlcL3VYM3c9PSIsIm1hYyI6IjM1MjNlOTFlMjJkNDg1YWQ3OTJjY2EwNjViNDA2NzY3ZGI5NThjYmMwNzBmNzdiZDE3OTlhYmRhOTU0M2I0YWIifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IlBSaExlTzEzQUFVNHA4b0JuSFhIVUE9PSIsInZhbHVlIjoiMFd2Tm5VcGpEOHFHWTFUbGJTbXA3Zz09IiwibWFjIjoiOWQ0M2VlOGQ1NDlmNzFlZGI4NDMzZDBmNGFjODNjZjI1MzI1YzUwYjYwZDZkNDEyNDI2NmQ1ZmQ3ODM5YzQzYSJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6IkVcL0N2RVk1TmRDMytRV3RUSkdsU2Z3PT0iLCJ2YWx1ZSI6IkZEUG9ibXM3MjRcL2FLRGYrTG5rNlBRPT0iLCJtYWMiOiJlMjIxMDhmNDk3ZTQxYmIwZDFiOTYwN2ZmNDgxZTRiNjlkYmQ2ZmNmMGM4NzIzYWU4ZGFlNjhmZDM2YmQ5ZTdmIn0="><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>3</td>
+              <td class="coinnamesearch">BTC/USD</td>
+              <td>0.00000000</td>
+              <td>0.00000000</td>
+              <td>Internal</td>
+              <td class="> text-danger "> Disabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IlpEQWRPV2VlUVg3Sk9pUmVNeFhqakE9PSIsInZhbHVlIjoidXZVZFhTenBqVkVLQjFNR3Rtc3BMdz09IiwibWFjIjoiZmZhMDZiNGUzMzBmZWJiY2I0MWY4YWRhNWZmNjk2ZDAwZWUwYjJmOWVkMWRlNjlmOTc3OGQ4ZTVjZWZiYjY2MiJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTrade/eyJpdiI6InJDWE5jNXhQb0Rvc1JVSE5jK0k3Nnc9PSIsInZhbHVlIjoiWDhMb1hIbm42QmtBb1NPbTZ2SWRUZz09IiwibWFjIjoiMjNiYWY4NWM2ZGQxOTkyNzk0MzIxODk1OWRmODVlMzhmZDliNDU2Y2Y1ZTk1MjZiYzNkM2MxNDc1ZTk5MGIyNyJ9"><i class="fa fa-check-square-o"></i> Activate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6Imc5cDlOdUI3eDdlejZpRklPM0NtRWc9PSIsInZhbHVlIjoiRnVTSVVHXC93VUhibzJ3NEFNSVwvWHd3PT0iLCJtYWMiOiIzN2YxODcyZThmNjNjY2FmMzVlNzk5OWU2ZjY5MmUxOWQzY2IyNTg2NjEzY2Y5OGI3NTQ1Zjg5MGE1M2UyYmI0In0="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>4</td>
+              <td class="coinnamesearch">BTC/ETH</td>
+              <td>0.00000000</td>
+              <td>0.00000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IjQ1OGd0TkxpRmJQWDU2aHNueDRVNGc9PSIsInZhbHVlIjoiQ0twMTVOZkZGdUJ6dXVGTVRydjZRQT09IiwibWFjIjoiMDgxNDE0MmEwMjY4NmU0YjYwZjAyMTQ3OWMyYzRjMWIwMzgwNzhiMjEzZmQwN2JjOWE1YjUzMmRhNWIxZDU5YiJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6ImQ4RUpkRWxyVlRJdUxwVmdUNnlRWlE9PSIsInZhbHVlIjoiZkNENFoxXC96TG43RFAzYjJDZHAzb1E9PSIsIm1hYyI6ImQ5NWIzNmJiMjJjNWMxZGJhODA5NDU2MWQ1ZjY2NzhjNDI3Yjg2OGZkODYyYjk5NTQxYTY1Mjg1Y2Y4ZjIwNDIifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6ImtNRFBia1NkWFpjMEM2NjE4MTRNRFE9PSIsInZhbHVlIjoiaDl3Znh4SndZMHhJWUtLSWtcL2k1NHc9PSIsIm1hYyI6ImUxOTNlNjI5MTRiN2I2ZjZmYTBhMjRjNDJiNDQzYzJhZWNkYmVmOTZlNjczY2NlZjIzYzE1YTMwODMwZGI3M2QifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>5</td>
+              <td class="coinnamesearch">BNB/USD</td>
+              <td>0.00000000</td>
+              <td>0.00000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IkkwNXo0amhEYWVhRDdPa3ZkaDBzTHc9PSIsInZhbHVlIjoiQU5uWStHVE5HK1NTTGRcL1wvN1p2c093PT0iLCJtYWMiOiI5ODliNjc3ZjhiMWRkZmUxODdlMjQyOThmN2M5NDFmYWRlN2VmZDU0MGJkMTgzODlhYjlkNDQ0ZTZiMGIwZGQxIn0="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Ikg3ZlBoZmhJTmdHYzdNOUhQcjVJXC9BPT0iLCJ2YWx1ZSI6ImpUb3E5NlA4aVdZSXczUnN3UHJHUUE9PSIsIm1hYyI6IjA1ODQ2NmNlMDkyYWY5YWRhMGYxZTA5N2Q4ZjYwOGJkNDZkMTQyN2IxYjRiOTFiMDUyOTEyYjc2MjYwYWUxZGMifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IkhDRzNDSHR1RlRuWnpUSGdOOG9UaUE9PSIsInZhbHVlIjoieVJKQXBYU0J0Y2tsUU9NSkRIc1M4dz09IiwibWFjIjoiOGZkOWVlMzhmZGEzNDMzNjA0MDIwY2VkMTRhMjFhZDVmYjk5MjMyZWZmYTFhMzZkZGM4NTcxY2Y2NTlkOGUyMiJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>6</td>
+              <td class="coinnamesearch">DOGE/USD</td>
+              <td>0.00000000</td>
+              <td>0.00000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IjFLajd6RGd2ZktPd3ZYK0lsNmpHUHc9PSIsInZhbHVlIjoiRGdOMjJIQW5ZeStpWkFQaVFUMmZuQT09IiwibWFjIjoiNTFhODVkOTVhMzExZGY2NmM4MGZmYzg0OTU4NDUwMmUxMDdhOTU3M2ZhZGUyMjUwMmQ3YzVmNjMxYTA1N2Y0ZiJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Ik9MTTgrcE10VXFyeTFEem81XC9CSVl3PT0iLCJ2YWx1ZSI6IkhOTDZMUFh6NkdBMCtOejY0eEpNcHc9PSIsIm1hYyI6IjM5NzI4YTNmNjQzYmM0MGY5ODE0MGUxNTRhNjBhNjU5ZGNkN2NmNzZhZTk0NDE3MzU0ZjhlMmRiZmIzMDY4ZGUifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IjVKVVBvc1pjSG5UdUl5TTFIOTBjY2c9PSIsInZhbHVlIjoiZHpQY0pZQ0lkcGNqbFc4QUNMUE1jZz09IiwibWFjIjoiZTY1ZjVjNzkwMGQ4NTQzMTg3YTYzYjZmZDZkYjM4MTFjZGUxZDZjZTBmYjI5YzlkMTU2NGNlN2YxOTBjMDkzNSJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>7</td>
+              <td class="coinnamesearch">SOL/ZAR</td>
+              <td>2.00000000</td>
+              <td>4.00000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IjdkdG9kemVzajZkcTNYSkltcjc2SVE9PSIsInZhbHVlIjoiV3RhcE1hdGsxVXA4YTVQQ1Z4MHRjQT09IiwibWFjIjoiOTk2MjAyOTkwYzE5NjRhZWUwZTdkMDJkZjc0OThiMzI5MDNmZWJhNjM1YzQ1Y2I4Yjg3Y2JlNTQxYTRmODk5ZSJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6ImpNOUFwSUdrQkVTNitHUDR2UHJcL3RnPT0iLCJ2YWx1ZSI6IkNIYTRMRStZaTlSTkNpWklNdEFoRkE9PSIsIm1hYyI6Ijg5NzNjMDdlM2MzMmE0N2RiMzYzYTI0NmZmNjcxOTg0MTY3ZTkxZTQ5NjY0Mzc3MWRhOTQwNWJhY2RhYjViNmYifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6InpQVE9CMTd1TVRueDhKeG1BNUpXMHc9PSIsInZhbHVlIjoibkNWclVLUXYyNnE3WmJqbGRLYTQ0dz09IiwibWFjIjoiMDNjNGQyZTkxMjY1ZDAxMDMwZTBhOTBlMjljZjQzZWM4MTc3YjE1OTM5ZWYxZmExOTlkNWY5MjViOGNlZmNmMiJ9"><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>8</td>
+              <td class="coinnamesearch">SHIB/ZAR</td>
+              <td>2.00000000</td>
+              <td>4.00000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6ImQ5bmRcLzVWQVd4MWYzd2hhXC9FRHRHdz09IiwidmFsdWUiOiJUdmYrWGdHcngxS0loRjdEZTAzMldnPT0iLCJtYWMiOiI3YTUzYWFiOGZkMjI5NzdmMTNiNzgwMDQwZTNjMjIyZmYyMTM5OTkwYzc4M2IzOTA3NmJkMjY2ZTFmYWQ4Mzc0In0="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IkNFZ2tneENFTEhpMlBcL09LUHFqc2lnPT0iLCJ2YWx1ZSI6InJRYnJ3OHZ3UWs1ZjFQelNCRU0rNkE9PSIsIm1hYyI6IjQ0YWFiZWNlOTY4MjJlMTAyZGExZGY4OTE4ZjNkMzEwZDZlMWRhMTIzYWEzZmFmNmZiMDA2ZTAwMmYxMzE1MTQifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6ImQ5VXNCQ2pmRkJEbjFqbXVsQ1BQelE9PSIsInZhbHVlIjoiUjRvR1oySFBzWUZRRWUzQ214ak1Tdz09IiwibWFjIjoiOTlkZmU5ODEwYjFhZmIwZGJjODA3Y2I4YTJkYWE5OWI3N2IxNzcyOTUzMGJiMzZmMjBiOGE4NjI2ZTkwNWJlMSJ9"><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>9</td>
+              <td class="coinnamesearch">DOGE/USDT</td>
+              <td>3.00000000</td>
+              <td>6.00000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6InBLN01pdU1Bb3ZneG1vWUMwVFpiR0E9PSIsInZhbHVlIjoiQjlwUTlLeHRzTEZaZ1JYNVZjNUtcL0E9PSIsIm1hYyI6ImE3MjFlZTBiODc1YTRlMjY2NTk5NDY4MzFmOGQwYWZlNjgzYThlNzZjMmZkMTI0NGVlYTdlNzI5Yzc1YjlkNzQifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6ImdxXC8wVElvaGxtQ090VHpYNTZjQU5nPT0iLCJ2YWx1ZSI6Ino5TmZjOVZWY3VxMU1rUUhtaXArckE9PSIsIm1hYyI6IjI0MzA4NjZkYWY3NmNjMjgwYzNiNGI5NzU0MzEyMjRkNTU5NzU5NjI0N2IzNWM2MWVlOWYwMjJkMzc2NWMwMDkifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IndYY0V2ZVBqRTYwemhpdTk2XC9QWEhnPT0iLCJ2YWx1ZSI6IkVMbGM1eTBTWWJnbWhJelU4RGVWdEE9PSIsIm1hYyI6IjYyZjlhY2NiZTUyMmEyYzQ5YmI4Y2E5YzdlYjY1YTJiZWM3MzRkN2EwZmM3MWFlZGVlOTk2NDU5OTgzNGNlODIifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>10</td>
+              <td class="coinnamesearch">ADA/USDT</td>
+              <td>1.00000000</td>
+              <td>1.00000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6ImRKQktQUVI2TzFBWDBmTEtPUjB4ZkE9PSIsInZhbHVlIjoieTZ0N2pTaHRiZlwvVWNBQWhINjIxMkE9PSIsIm1hYyI6IjQyODZhZDY1ZDRmMzQ2NjRiNTQ3ZDI1NTJhZWJhOTg2ODRkMjRkMWEzZTRiMGMwZTgzNTlmNWVmNjM0YjEzNDYifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IlQyRDljYnJ3UllIUXEwcm9pYnhTeVE9PSIsInZhbHVlIjoiZWNpXC9XSjFtM1ZNYzlLQ3NpUmNXS2c9PSIsIm1hYyI6IjNjMTFiZjUzNDZkZWUxZmRiOWU4NGEyNTg3YjBhYjU5YzA1YTc4OTY3ZTA2N2I3MjI4MTE1NDBmYmQ5Mjc4ZGYifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6IkNwWTU4WDY5d29qenVlTnFiQWpwdEE9PSIsInZhbHVlIjoic0k3VmpBRHI1VHVoc2hUTVR1c3BtZz09IiwibWFjIjoiOGM5NTBiZWM1ZWJjZDk0MTFmZWFhNmMxMDNjYTk4NTI0Mjg0NjFlYWEzYjZkN2U5YzE2ZDgxNDZmMDBkYTViOCJ9"><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>11</td>
+              <td class="coinnamesearch">ETH/ZAR</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IlNsbk5wN3BuSG52SERQamNIQUU1a3c9PSIsInZhbHVlIjoibHB6U0pMaFNHamlTY0RjVytiQzdWdz09IiwibWFjIjoiZmE5NTE5ODJjY2NlZTg2OTg4MWYxOGVhNGUyYjkzMTg3YzM5YjA3ZmU4OWQ2ZWEzNDZkNTJiMDU2Zjg3YjMxOSJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Imhpb0JDVW9iM2JhRmhVamVjVTJUUlE9PSIsInZhbHVlIjoiQjlTT3MyTkZlOWxmYVhVT0lOTklMQT09IiwibWFjIjoiYjgyYjQ2ODkwYzg0NTg1NTg4YjNiM2ZlODhmZmExZGY2ZGEwZTdkNTI0MmZkYzNiZmQwMWZhNTMyNzg1OGY0YiJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6Ik1pb2dHeWhuY0VlRVZCRDd4OUlKMlE9PSIsInZhbHVlIjoia2k4U2tXUFlha2pPZnVUV0ZNV21oUT09IiwibWFjIjoiNjk2NzFlZmE3NTRkMzJiNjZhM2Y1NDVmNjJhMzUxZTA1ZDNlZGEyYjA4ZmQwYjkxNGE2OTM2MDA4YzUxMGEwNSJ9"><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>12</td>
+              <td class="coinnamesearch">DOGE/ZAR</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IlwvbTVIQzZIZlRvZHVQRTRqTEM5RlpnPT0iLCJ2YWx1ZSI6IjhOWW1xS0dVaFN6UnJlVUt1V3hZSEE9PSIsIm1hYyI6IjIzNDUwMWJlNWE5MjFkOTY4MGU5Zjc5NTA1OTRhNmU2NTVjZGRiOTdmYjU2ZWMxYThkZTc4MjdmZGQ4YjczNzMifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IkVYZk1qNlpLOUlvSjl6akxlbnI0MGc9PSIsInZhbHVlIjoiYllHOHo1REcyXC9QYnAyZ1N6UThXVHc9PSIsIm1hYyI6IjQ4Mzg3YmE0NjcxNjFkNzgxMDg4ZWIzOWI4MTY0YmFhOGRhNDc5MDVjYzk0MTEzZWMzMzViYzJhNzRjMTk1YjEifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6InVWMU8raFRiY2FEN2cyWWxcL0VNWlZBPT0iLCJ2YWx1ZSI6Ik1NN2hnSkFPTnNkc1A4VWRKOE5JM3c9PSIsIm1hYyI6ImJmNzEyMzBkYThlNjllYTJmYmJhMmU5MmNmNGU2MmM2M2IxODk3MDNhYzVlZDg0MTlmY2Y3M2M1ZWM2ZTUyYmQifQ=="><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>13</td>
+              <td class="coinnamesearch">ADA/ZAR</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IlYzbExtRWVXZmttYUcxY0RCZWMzNFE9PSIsInZhbHVlIjoialZSbWM0TzhkRnJQaTI5K2F5UXJDdz09IiwibWFjIjoiYjY2OGYxOTY0MmY5MjZjMDVkODRmYjg2NjNiMmJlYWY2MjRjOWE4Yzc5ODI1YzA5OWIwOTBlMTk4NTRjNWQ3ZSJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Ik9SVTRHVTFcLzc1K1lTZTU3ODJKbkdnPT0iLCJ2YWx1ZSI6ImFxdHhsUVVOU2R5cDh4TVFOODNqK0E9PSIsIm1hYyI6IjMyZjY3MGM3MDM1MTMxYjJkYTVjYjU3OWZlYzFhNTQ0MmVkY2FiMDc2NmNhNzk1ZTg4Y2RkYjNkNGUyYWQ2YmIifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6IkY4SDJ0cFJid2FIaGQzRG1pYllqVnc9PSIsInZhbHVlIjoiWlJJTzNNXC9BcEtpVVJSb2lnYVBMVHc9PSIsIm1hYyI6IjgyZDZhY2VkYjY0OTRlNmNmNTQ2ZjMzNDIxM2QzNjJjN2M4ODJhMTU1MzAzOWJlZTY0YTQ5OTY4YzVjN2I4M2EifQ=="><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>14</td>
+              <td class="coinnamesearch">USD/ETH</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IlJvejlqYm5hOXlmWGxEVXdkUG9TZnc9PSIsInZhbHVlIjoiOTBsZEV6cHJCUGZLRVpXSkFhcWthdz09IiwibWFjIjoiMjcwYzRjYTNiMjYwOTEwYWFiMTViNDBjZGZjMDc5YjVjNjlhNWMwZDUxODBiM2JmNzg5ZmJhOGZlMjdhZWRhZiJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IjhVRlNHMkRyN2xWUkJKSW8xZjhVV0E9PSIsInZhbHVlIjoicGhYOWMrWWNXK3ptdmxMVVM5STV5UT09IiwibWFjIjoiOTBiMGIwMmYwZjU0MjQ0NTIxOTdjOGZiMzUxNjBkZDdiMjExMzg0YzExYjkxNDZjYzU4YjMwODNmYzU3OWEwMyJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IkdKMjF1K1wvNFdFV3pSelwvY0hRV0t5Zz09IiwidmFsdWUiOiJ5XC8reXF6MXUzQys5NVNVXC9MWUpmVWc9PSIsIm1hYyI6IjEzYWViNzk5MWY0OTE2YWE3OGE1YmZhNGFhYTllZTQzYTc2NmJhMjJhM2E3YjI2ODg3NmVlNjEzOTA0YjlkYjIifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>15</td>
+              <td class="coinnamesearch">DOGE/ETH</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IlJvK3NpbFR4eURwQVMya2FYMnpmUmc9PSIsInZhbHVlIjoibnBJNjZcL3l0eWVyWnUzTEpVNCsxb3c9PSIsIm1hYyI6IjZjMDAxYjNkY2I5NTQ3NjM4MTNlOGRhMjBiZjEzMmZiMGVhOTBkYzQ3NDUzMjdiMDQ0MmUxOGQzMTJlYjM2ZDIifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IjVkZ3lnU2J1RjdjaXhReUFEUkkxSVE9PSIsInZhbHVlIjoiOHRtc2QwVVo0UmYyNFc2eDlNSWVEdz09IiwibWFjIjoiMGNjZWNjMDZlZWUwZTgyODNkYzJmYjYxNDE0OThiMzFkMWZlZmQ1NWE5YTg1NWY2YTQyNGYxZjgyNjc2MzIxMCJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IjNDMHZLdks2YkwyRkwwenJFMkhuSlE9PSIsInZhbHVlIjoiZVV4cDY4U2RrenhNVk9cL2NHbHAwOVE9PSIsIm1hYyI6IjIzZTljN2YyYzk0Nzk4YmJiM2M0MzE5NjJiYTgyMzczOGY3YjFkYjZjMmE3MWI4NWRhZjdjOTYzMjdiZjhhNGIifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>16</td>
+              <td class="coinnamesearch">USD/SHIB</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6Ikw3UGVCeFR3WTFGb0Z0R2RCSXNIUUE9PSIsInZhbHVlIjoialBxMGtPSmdwdW5mM0V1eDhoZ3JoZz09IiwibWFjIjoiZjYwZDYwNGIzMGYxYjUzNDEzNDQ5MjVlNzNmOTFkZTg5Yzg2ZTE3NDRlY2JjZWVkNWY2OGUyNDdiMzlhOGJlZiJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6ImJOeWxmRzFTWjZycVNHOGczTXJZUUE9PSIsInZhbHVlIjoiV1EwSkxZNWtjcTY3dTlpTnA2VXdidz09IiwibWFjIjoiNThiYjI0YjJmNWM0MDNhZjE1MjU2ZGU4YjUzODRhMzZjZmEzZWEwYWIxZjBkOGFhMmQ2YmI2YTNjZjA1MmI2YyJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IlVSTUE1b1RobGYwbXlqcFl6N2hMbVE9PSIsInZhbHVlIjoiYUN6REROTnprTnFuTktsS0cwYzdEdz09IiwibWFjIjoiYzZkYzlmOTIxZTJlMTg3MTc4YjIxYjk0M2M0Njg4NDMzMmQyZWUzMjEwMzk0ZTZhOTBkN2U3ODZmNTYyYjA4YiJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>17</td>
+              <td class="coinnamesearch">USDT/BTC</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6Ikdjb3lHVGYrMGtla3Y5bDBiUTJoOHc9PSIsInZhbHVlIjoiQW1NZDJWd1NWS1lmdkRBcG1MSlNRdz09IiwibWFjIjoiZTMyM2NhN2FhMThiODE3ZGIyMWJlMTk3NjZiYWQyNGQ1NmNjNGJiNjRkOWM5Y2E1Yzc1YTk5ZDdkYzEzMzI3MSJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IlBSekhXNnBlY2ZqRUo4OVAycTZic1E9PSIsInZhbHVlIjoiV3l2eGtXRGs5TmpncGgzR1lRakJQZz09IiwibWFjIjoiZTZiMTA2ZWExNTQxMjY0YzdiYjkyYzRhNDg2MzVkMDQwMWE2NDQ2MzY0NWQwZWNkZmM1NjVmZWVkNTNjZjM4MiJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                  -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>18</td>
+              <td class="coinnamesearch">LUNA/USD</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6Ikg2NlNDdXVRQ3FyNkxZaE1BNU9KUXc9PSIsInZhbHVlIjoibFFzcHd4Z2hTYzM4aEJ1bldVdXdGZz09IiwibWFjIjoiZmM5YjQ5YmI4ZGM0YmYwZmU1Y2UwOTY4ZjdiYTczMWMwY2EyNzY4OTJlZTA3MDNiODlhNWJjY2ViMDhkOGJmYiJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Ikp4cXBBUW9IcjVnSjQxZGNod1R1emc9PSIsInZhbHVlIjoibUhNc01XQVwvRHh0MUpzeEpiQ251cmc9PSIsIm1hYyI6IjIzZGEzNjlmMjE5MTcwM2Y5MzcwNmMwMDA3Mzc2MjE2MTNhMzQ1YzlkYjg5MTNmNzI3ZDkyZDA1MTYzZTJlMjgifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IkEwakRwOFFkeXJWeFFSY1Mza0tKNEE9PSIsInZhbHVlIjoibnRDWHFwU2FqQmdhandBTktFTTQ1dz09IiwibWFjIjoiYzg5MGYwMTViNTY0YTYwN2EzMTlhNjUyOGRhMzRlNTZiNjkwNWM0NDQ3Mzg0MzQwYWQ5NzcwNmJlY2VjYTg3YSJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>19</td>
+              <td class="coinnamesearch">BTC/BNB</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6Ing4UWRnVHJXZDhOOWFZVFwvZkVYanR3PT0iLCJ2YWx1ZSI6InVONXNGQ3R1amRHXC96Z3lESUxGcUJ3PT0iLCJtYWMiOiI2ZThiYjFjNTRlZWZkZTFkNzBiMjBlMGUwMmMxZGY1NmVkODE3NjEyMGNhNDE3MzFlYzgzMGE0YWM5NzEwZWVmIn0="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IkN4VTVOTHJRS0pGbFhNR1UxN3NMekE9PSIsInZhbHVlIjoiVVp3dnhTcjBKWWFqdDUxRER1NG1CZz09IiwibWFjIjoiZGM1ODYxY2Q3NjcxOTJiYjMxNTk4NzQwNzkzMjgzZGU2ZTJjMzQ0MjgxOTdhMjlmMzkzOGE0Y2I5MDI5Y2ZmMyJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IkF3c29TTlNkcnE2TnVtZzN1OG13XC9nPT0iLCJ2YWx1ZSI6IkduQ3RERDhuRU84UXFXa2NNMkRnWlE9PSIsIm1hYyI6ImQ0M2YyN2U5ZTM1ZWEwODJkNWZlODgwYzhiY2JlNDI0ODZmYjhlYWQwNmU5NzRjNjcwMWRiNTQ1ODBjYTUzNDUifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>20</td>
+              <td class="coinnamesearch">BTC/UST</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6ImEraVJSckI5cFVxRkpjN2tKTE96Y0E9PSIsInZhbHVlIjoid25HYllSeTBzYjlXMUxuRlhMUlVaQT09IiwibWFjIjoiMzJiMWExODgxYzViZDA3ZjkzOTMyYzJmNTFlOGJjNmNmZTJmZGNlNGJlOGNhNTM5ZDU1NTY2Y2NiMzk4YmQ4ZiJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6InlzdTFRWUNFd2Jqc0ppU3FvMEhHRVE9PSIsInZhbHVlIjoiM0xQSHBGY0d0VGtGdFk2dkV0VXZDUT09IiwibWFjIjoiNmI3NzdmYjUzNGNkZDkzZDFmY2JlMjY0NGI1MWFhZTE4NGE2MTQwNTYyZmVkN2M5OWE4ZmY1NmFkYjA4NGVjNCJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6Ijh0Vmx5UnpzU3U0aE5QQnRvVENvUGc9PSIsInZhbHVlIjoia1B5UDFLcldcL3NlUDFLdGkxbUdzTVE9PSIsIm1hYyI6ImI5ZDhjZjE4MzY1MDc2YWYxY2VhMjBhMWU4OTZmZGRiM2YwMTBjMTg3NGI2NTk2MDVkNTllYTgwNzkyNTRlNjUifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>21</td>
+              <td class="coinnamesearch">UST/ZAR</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6ImptUXFGeGdcL2l1QXU2eWE0ampsS1d3PT0iLCJ2YWx1ZSI6ImNORU11clVKQTJoSGhHRVlFNGJVRGc9PSIsIm1hYyI6ImI0NDZkNzUxZjg2ZDNjNjMyNDdjMjJhYzkzYjZjNmE3MmE3MjExMzU5YzYyYzk2ZDQ1N2FjZTQ0OGVjZDJhZTAifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IkZyanpqNGRaUkNCVnhzVEJGTFVrNkE9PSIsInZhbHVlIjoidk9PRlZqbjJcL0VvN0V6QWRHeHk0YlE9PSIsIm1hYyI6IjM1ZDhjMGZkYjNiMTAxZTZiY2Q2MmVmNGE5YmFlNDg3MDRiNjViNjllZDViNjliMDI2Y2ExMGZlYmQwMzFjMDQifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6ImpxRXp5MFpQYVlZVVRjcTZaR1ViR3c9PSIsInZhbHVlIjoieVdKRnJQU3AyMWxLSUllZjRjY2FRQT09IiwibWFjIjoiYmIwNWRiNDkwOWZhZmE3MzliZmNlYzU0NmYyZjhiYzBjOGJmYjVkYmIyYmZlMTAwYzk4NmU2NmQ0NThmOWRlMCJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>22</td>
+              <td class="coinnamesearch">UST/BTC</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IkwrZ1JcL1pCd0YrNkV5dmhxb3JHcjFnPT0iLCJ2YWx1ZSI6IjBVcHdFVVwvNnRNQmFVelhvK2hJK0tnPT0iLCJtYWMiOiJkYjU5ZjVkNGE2ZDgzYWIwMjU4NzFiNjIzMjVjMGM3ZTdlODk5NWM2NDZlYTg2MjcxMDE2ZjU2MGU2M2Y3ZjQ3In0="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IklyYVltUVRYaHQ4cEdGV2phTUZIYkE9PSIsInZhbHVlIjoiajhDanlCMGlPWjZvbFpyRUQ2SDVTQT09IiwibWFjIjoiOWQ2ZmE4OWM5NGRlOGMzZTAwOWVkNmU2ZmNlYmQ4MTMxMzUzZmQzZDVhNmQ5MWY0MDllMzIyOGYwNTczNzBhNiJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6Im9YbEl4MmlvTFwvRTdtNWdtajN0NGF3PT0iLCJ2YWx1ZSI6Ik9XK2NpV0tFaU04U1NReUtBckNoQ0E9PSIsIm1hYyI6ImJmZmM4ZGE1M2JkOTQ1NDI1MzIwNDIwNTA3OGRkMDQxODdiNmY0ODVkYjA0ZThkMzBlMDVhNzU3M2ZiYzkxZDIifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>23</td>
+              <td class="coinnamesearch">LUNC/BTC</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IkVIeGVZWUdlaG9GOVBuUU9wcFwvUVpBPT0iLCJ2YWx1ZSI6ImxiMTZXaytvMlRGbHdLSlpYY0VJSkE9PSIsIm1hYyI6IjQ5NGRiNTQ2MWQwOGUzOGU5MGM0YmY2OGNhYTVkOTI3ZGVhNTEwNzMwOWFiMmVlMzIwMzEzMTM3MjdkYTQ5YjQifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6InJBUWFQVnVsbnk0VFlOZkNobWNWMUE9PSIsInZhbHVlIjoiaDFsU3hmcmlBNzdJTTNmVHRiNk95Zz09IiwibWFjIjoiOTY5MmY5N2IzNWQ0MTk3YTRlNjU3ZmQyNjhiYmZkMGI0MDNmMDRlZGFiOTc5ZmM2MjZmNmI2Zjk5ZjM1YjdlZSJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IkRvVjdoUWdvbW03dUthTFRPUENEcFE9PSIsInZhbHVlIjoiSGtEZ1p2a3VxTVdkWGhHc21jZE5tdz09IiwibWFjIjoiMGRhZmE0ODkyNDU0OTA3YWQzOTEzYjY0M2IyYmQ2YmRiZjFmNGRiM2YwNzYzNDY2ZTg4OGFjNDc5YWMwZjVlNyJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>24</td>
+              <td class="coinnamesearch">LUNC/ETH</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IjljQnBSQjRSczFEZVZcL21RVDhDR1p3PT0iLCJ2YWx1ZSI6IkNTaHN1K29kYzdITXkrd3VTemlXY1E9PSIsIm1hYyI6IjFjOGU2YjVmNTRjZGZmZGI1NWIwMGE2ODllOWI2YjBiZWUyYzA4OGNmZDg0YjBmMDQ4NTk3MGY4ZjY0NTc3M2IifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6ImxwUDByU1wvWHJxRGNNdUNCblRzOFRBPT0iLCJ2YWx1ZSI6IlhzMjk3OHNvN01IcEk5cmtpVWZHN2c9PSIsIm1hYyI6ImU2NmQ3ZjI3MjEzMmQxMzViNjg3N2E2YjE4Mzc1OWNmNmYxZDUzMGMzM2U4Y2FiYThjNDdmYjYxOGY3YWE5YTAifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6Im9GdjFpc09EdE81eE51bEM0aEtqMEE9PSIsInZhbHVlIjoiTHBJaEZyWTM4dzR0NUp4aEx4eUgwQT09IiwibWFjIjoiNjc0ZjJmYWQ5ZWZkNmI2YmEwNTc4NTgzMmNkYjk4ZDYyMWU5YmRmYjE0MmZjNGMyMzA4NWM3Y2I4YzhhMjRlMSJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>25</td>
+              <td class="coinnamesearch">LUNC/USD</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IitFNGtpN2Noc2NcL1Y2eHJVeVhZamdRPT0iLCJ2YWx1ZSI6IlRGNWpFMnZ4NFd6enZYeEo0N0Fhamc9PSIsIm1hYyI6ImIzY2E2NzA0OTkyZTFlZmQ0MDc5NTdmYzczNGM1YTg0ZWM5YWFhZGZjYjIzNTI3NWFlZWQ4OGM3MjIyYTE0ZTMifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Inh5dEpDc1ZZbElZeEtRTWgxZm9cL0ZnPT0iLCJ2YWx1ZSI6IjlpaE5lOHJaNmlIaVR6Rkk2OHRrZHc9PSIsIm1hYyI6ImIyMDRlYWEwYjg1Y2Y0Njc3NzUyZjFiMGNlOTAxMWJkMmQ3YmQwMjdhMDAxM2Q1MThhYjUzNzNhOThjNzUwNTkifQ=="><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6InM0ZnBJR25BZ0xcLzBBMkt3ejBhOGhRPT0iLCJ2YWx1ZSI6Ilh4WnJtTjhZZHN6c1JESnBvcm1KSWc9PSIsIm1hYyI6ImZjNDYzYTExNDZlMjVhMTZjM2VlMmZkYWI3NDY1OWI5ZGJmZTY4N2ZiYTY2NGEwNzM3NmRmNmVjOGRiNjkwMDAifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>26</td>
+              <td class="coinnamesearch">BTC/GBP</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6InV4RWJWbzUwUDdPalFVS3JkMTNoQWc9PSIsInZhbHVlIjoiMXVJRkE3RFJPS25sV0pHWUhOWVFBQT09IiwibWFjIjoiM2U3MmY4YTU5NWJkOTU4NGMyZGQzNWQ3OTA0MmUyZGUwNmE5MzYwNjNlMGRjMWY0NjQ4MjYzOTU0MzkzMTBhMSJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Im1KUlFLUEE4ZFg2VVZFRHNmUE13TEE9PSIsInZhbHVlIjoicXc0SDRRelh6MklPdEFEQUZORXR0Zz09IiwibWFjIjoiNjEyNjFjYWYyZjM1ZTcwODQ0MGEyMTkyMjczZTUxNmI0ZDI3NDBhYzE2OTViMDA5ZDIyZDdlODY2YTYzMjU2YiJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6Ik5SanFoQTVraDBYR21wYVV6Y3ZRenc9PSIsInZhbHVlIjoiaHBub05WaXpMMDJxbVlSXC9LSHRpQnc9PSIsIm1hYyI6ImIwNzliM2IzMDI5NzdhM2I4YTMzNTM4NDBkMDZjOTIyOThmZWI1ZjI3MGJhNjRmYTBlYjg2ZTQ3YWU2ZjU1ZDkifQ=="><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>27</td>
+              <td class="coinnamesearch">ETH/GBP</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IlpQNkFoVWw2UHdCT1JabDRVbDl3YkE9PSIsInZhbHVlIjoiZ2ZRcGt0NTNURlZDU3k5Q3ZtK3F5Zz09IiwibWFjIjoiYTI3YzhlZDFlN2NjNTRiZDEwNDEwMDcxZjBjZTQ5ZGNlNTIyOWM3ZTBjMjBlMzRmNzVjMzY2N2Q4YTk4MDUzYyJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IkZFQjBGY04za0hOb2UrWXVOendlR3c9PSIsInZhbHVlIjoiRlFueFd6TzREZ09YVGE3azY2UDd0QT09IiwibWFjIjoiMDg0NjZjYzA5ZjkwOGU0YWJkZmUyYWYxMDJmYWFjZWQ5MmQxMjA4OGQ2NGVkODhmN2M1YzFjOTUxYzEwM2RkOSJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IkZLK2dtaFg5aEQyVHNHUTdkbExKaGc9PSIsInZhbHVlIjoiWjJDTWdNWWozOGZkNzZ5NnM4S3JzUT09IiwibWFjIjoiMjgyOTU2YWViYjA3MGU0YjIwOTA1ZWZmMzVkNDU5NDc5MjRiN2FkMTE4NzZmNmE0YjFmYjIzZjI0NTQzYWRiMSJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>28</td>
+              <td class="coinnamesearch">APE/GBP</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IjlUc1F5R0wzNkFPQWpUcUtEY1FCK3c9PSIsInZhbHVlIjoidUxBNW9sa1FkamUyY09wRFlnZDZ3UT09IiwibWFjIjoiYzIzNmExZmRiMmI0NjRjYjJmNmM5ODU5NjkxZTgzYzg1ZDhlYmNhZTI5ZDI0NDY4MWMxNmEzMjY0MGM1NTY1ZCJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Ilh1SVpoSm9nU1cxaVE5UFlpZ01oOEE9PSIsInZhbHVlIjoielNxWDNIaFh1WXo2MEp6UTBuVFNTdz09IiwibWFjIjoiZTg4M2E0MDA3MWM5ODlkODI1ZjU0MzdmNmQ0MGQyODVkN2U5NWZhYzBhZjYzNzg3MTRhNjViMjk5NDYzMGEwZSJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IjF3XC9qdFwvSlNRZmxKMjBLeWt2bE9oUT09IiwidmFsdWUiOiJPNGJvREhEU0MzWnlsc0krS2N1dHNRPT0iLCJtYWMiOiI1M2QyMzdiNjY3NTdkMzJkZGU1OWFiZDFjMzllY2VkMzMwODdlNTBhNmNlYTBmZWFlNTBhMTBjODg4Njg0ODMxIn0="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>29</td>
+              <td class="coinnamesearch">BNB/GBP</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IkFRTGliXC9ib2xiOUpidE9QeTVldmdRPT0iLCJ2YWx1ZSI6ImNVUXlDOXpLUyt4R3EyVDFZdW9vNWc9PSIsIm1hYyI6ImE1ZDFiNjA4ODM5ODBlNzI1NjAxYWNhMGI1OTY0NDg0NzMxMjJhMmRiYzViNDFhNDMwOGI4OTA0YzRhOTdkZjYifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6ImJ4SlVIZGltempNcXlZbWorUmNmRmc9PSIsInZhbHVlIjoiS3c4UmR1OFpBS2tlalJXNFk0UHpydz09IiwibWFjIjoiYzRlZjcwOGQxNzQ3YzFkMjAzYjE1OTRiZmRhNTZkOTQzMDU1YzExN2I4NTU3ZmQ4NmI1MDE3MTQ5MmQ5NWFjZSJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6IkxZTk1zTjZ3dHJ2bHdKNHJneXRYUUE9PSIsInZhbHVlIjoicEdIOVM5NEx4UTBOWWFpZTA0Z0ZUQT09IiwibWFjIjoiOGMxOTcyOThkYmNkNGMzYmZlODMzM2I1YzI1MTM3MzRhYTc4NTZlYzc4NTg0NWY2ZGFkYTIwZTNhZmZiMDQ0OCJ9"><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>30</td>
+              <td class="coinnamesearch">BTC/ADA</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6Ilg5OHh4MmRna2RRRDBlZkc5VzJLMmc9PSIsInZhbHVlIjoiQ1FHTnkrbG9vTElUVlk3ZERtNXNqUT09IiwibWFjIjoiMWU4ZGE3MTFmMDhmNzY0Njc1Zjg1YmVlMzRlZjhmZmQwZGQzZjA4MWNiODZjM2RiZGM4YTgxYjdjYzViOThjZSJ9"><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IkZOS1RKb0pcL1E5TnU4T1FcL2JqMnR2QT09IiwidmFsdWUiOiJwWVVyMlwvN0RIbDRBNW9IZ0MzSDlkQT09IiwibWFjIjoiNjA0NTRlNmQxYWViMjU5NzkwN2YzY2NkZTYxMGE0YTM4ZGNhYTYyNDZkOGVmZTg5ZmMxN2NjYTA4ZjE3NTAzOSJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IjNKMjkzWHlQRStNb0pqa09hZ0hRcVE9PSIsInZhbHVlIjoiNzdYXC82cEtyVTJDeFQ2OHFOTit4clE9PSIsIm1hYyI6IjA4NzQzYzUxMmJjMjdkODk5ZThhNTlhNzhkNjZmNzZjM2E1ZTc0ODgwOGVlYjJiYjkxMGY1NmFlNzE0MjViYmYifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>31</td>
+              <td class="coinnamesearch">ZAR/XRP</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IktTXC9BdTBuQ2VUYWs5WlVOWUpTRUtnPT0iLCJ2YWx1ZSI6IkI5eGhxenlOR2dEd0l2SG5yUVM3WlE9PSIsIm1hYyI6ImM1MzU5YWMxYjg0MDM2ZTBkOGY2OTRlOTFhMzIxYTcyZDBkNzFiY2VmOTEwNWU1NGE3ZGEyZmVkMDFkYWE2NjMifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Ijk0b2phcTdCRXZRUzhmaEZSUEFZZ3c9PSIsInZhbHVlIjoiSDFuZzZSTEJjMWRCZFBHTkUyRHhrdz09IiwibWFjIjoiNzY3OWQ1ZmU5NmRlYTBjMDJhZjdmODg5OWQ1OWUyZjQ1ZmNmZDk2OGYxMjAzYjYxYTg4YjA5MTc5ZGYzNmRlZiJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6Ikx2RnJGTGQyWGpxcm1JUFRaN2puSlE9PSIsInZhbHVlIjoiazNZckJCVXgxUTJwRWNlb1hUVUJsZz09IiwibWFjIjoiM2ZjNWEwNDcyNjJlNThhYTAwM2FlOTZiZjZhNTdlOTBmMTUzNjk1Yzk0MTE4NGM5NzJhZmEwZWY5YjgxMzBkNCJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>32</td>
+              <td class="coinnamesearch">ETH/USD</td>
+              <td>0.75000000</td>
+              <td>0.75000000</td>
+              <td>Binance</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-success "> Enabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IkxWemhNeFQ3eXQ1cnp5SHBXZDAySFE9PSIsInZhbHVlIjoicHM2eUlrWENxQTcwRHNtRU9cLzVUdEE9PSIsIm1hYyI6ImY4YjE5MWMwN2IyYzgyNDM0ODJlYTVmMjdkMWIyZDcwNzE5Yjk1ZmIzZmU5NTI4ZmUxOTQ5MTRmMGJiN2Y0NGEifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6Im9jYTc4QjkzUlFYV2RxUzI2WVppb2c9PSIsInZhbHVlIjoiK1JQeVpoSnJsalpySlZPT3dVbllsdz09IiwibWFjIjoiYzIwNzkwNzgzMmJjNWQ3MDBmMGQ3MzczOTkwOGQwZGUxZTk1MmEwMDI0NGY4ZWYxZDhjMDVlZjE1NjYwZGRlMiJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTradeType/eyJpdiI6IlJVMU91bkQ0WnllNW1pYlJNbFNIZ0E9PSIsInZhbHVlIjoiQStQREZCSUFTSk9PMUNUWUE5eFZTdz09IiwibWFjIjoiYmZhMTI5NWY4MDYyM2MyMmM3NWQ1ZTA2NjM1OWMxMDM1MWJkYzkwNzNhZDBkYTc1OTIxZmRjZWM4NGY5ZTZmOSJ9"><i class="fa fa-ban"></i> Deactivate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>33</td>
+              <td class="coinnamesearch">STR/ZAR</td>
+              <td>0.10000000</td>
+              <td>0.10000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IlRVUVR5Z3IxQytTbXNxclZqNXFEXC9RPT0iLCJ2YWx1ZSI6ImRuK1B2XC9HSEdhbmdUZ1dDWUV3Tk53PT0iLCJtYWMiOiI2MDBjNzFiMTM1NzUyMTRiNjAwMmM5MTA1NDE5YzAxZDc2MmE4MDI0MmFlNWM5NzM1MmFjMGEzMjRkMTg1MjI5In0="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6IlhtSG9Zd2RNWkpFSnFXdWdJQnRLa3c9PSIsInZhbHVlIjoiY1Q3NFRud0VrUU9lUWM3Y3d6K2Rldz09IiwibWFjIjoiZWYzZDIxZGQ4NDNiOGY5N2FlZTYxYzdkZmMxNzA4Y2RjMDZmYmNlYjg0OGJhZThkZmVmNzY4YjhmYTI1MDg0MSJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IjVpUnVnVE1LelhySko4Nlk4R09hMHc9PSIsInZhbHVlIjoid252UDN1XC9paE4xa2luS3ZhS1lwdHc9PSIsIm1hYyI6IjQxNDY5NWE1ZmRhMzI1NzIzOTY0MmNhOWRkZmIyZGZiZWJhYTIxYzBlZDMzZTM5OGYwMjA0ODA1NzRhNWE1MGEifQ=="><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                    <tr>
+              <td>34</td>
+              <td class="coinnamesearch">STR/BNB</td>
+              <td>0.10000000</td>
+              <td>0.10000000</td>
+              <td>Internal</td>
+              <td class="> text-success "> Enabled </td>
+              <!-- <td class="> text-danger "> Disabled </td> -->
+              <td>
+                                <a class="btn btn-sm btn-info" data-toggle="tooltip" title="View/Edit" href="/viewTradeSettings/eyJpdiI6IkxzQWljVWVMQWJISm5UTGl6Z1JCYXc9PSIsInZhbHVlIjoiXC9ZeWN3dVROdStvcmlGNEcyR1IxakE9PSIsIm1hYyI6ImNiMzcyYjIxOTcyYjEzOTM5NDE5OWIyNTBhZmIyODQxNGQ0ZjZlMWU1OTI4MWM4Mjg1ZDBhNDJjNDc2ZGEyYzcifQ=="><i class="fa fa-pencil-square-o"></i> View/Edit</a>
+                                <span data-toggle="tooltip" title="Deactivate">
+                  <a class="btn btn-sm btn-warning" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendTrade/eyJpdiI6ImV1K1d3RTBDUzFzdHU4RGI0aE9tTHc9PSIsInZhbHVlIjoiN1VMUU95RHg5QU8wM2xGR1U0ZFBpdz09IiwibWFjIjoiMTM4YzgzODE0YmNiOWUzMmYxNmE1YjZiODVkNjlhMjNjZDhkYjQxNzNkYzcyYTc4ODQwNDNhZmFiZWRiOTE0YiJ9"><i class="fa fa-ban"></i> Deactivate</a>
+                </span>
+                                <!--                 <span data-toggle="tooltip" title="Activate">
+                  <a class="btn btn-sm btn-info" data-toggle="modal" data-target="#confirm-enable" data-href="/enableTradeType/eyJpdiI6IlVGbHNLQjlkTFlUT0tSYmVDZ3doUnc9PSIsInZhbHVlIjoicFdLdjRIQVl1NDVSTXR2OEF3VXFQdz09IiwibWFjIjoiNzIxNjBlYTAxNWQ4YWY1YWM1NzY5ZjBkMjZlODNmMWIxZjg5ODdhMzI5ZTRkMDIzNzQ2ZmQ3ZGQ1YWEyMjBhOSJ9"><i class="fa fa-check-square-o"></i> Activate Liquidity</a>
+                </span>
+                                 -->
+              </td>
+            </tr>
+                                              </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="modal fade site-modal" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Deactivate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        Do you want to deactivate?
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-success btn-ok">Yes</a>
+        <button type="button" class="btn btn-success" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade site-modal" id="confirm-enable" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Activate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        Do you want to activate?
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-success btn-ok">Yes</a>
+        <button type="button" class="btn btn-success" data-dismiss="modal">No</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </style>
+  <footer class="footer hidden-xs-down">
+    <p>Copyright © 2023 Starbuy. All Rights Reserved.</p>
+  </footer>
+</section>
+</main>
+<script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+<script src="/vendors/bower_components/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+<script src="/vendors/bower_components/flatpickr/dist/flatpickr.min.js"></script>
+<script src="/vendors/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="/vendors/bower_components/jszip/dist/jszip.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="/js/app.min.js"></script>
+<script src="/ckeditor/ckeditor.js"></script>
+<script src="/js/validation.js?v=568"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  $(document).ready(function() {
+    var activeSystemClass = $('.list-group-item.active');
+    $('#system-search').keyup( function() {
+      var that = this;
+      var tableBody = $('.table-list-search tbody');
+      var tableRowsClass = $('.table-list-search tbody tr .coinnamesearch');
+      $('.search-sf').remove();
+      if(tableRowsClass.children(':visible').length == 0 && $('#system-search').val() != '')
+      {
+        tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">No coin found.</td></tr>');
+      }
+      tableRowsClass.each( function(i, val) {
+        var rowText = $(val).text().toLowerCase();
+        var inputText = $(that).val().toLowerCase();
+        if(inputText != '')
+        {
+          $('.search-query-sf').remove();
+        }
+        else
+        {
+          $('.search-query-sf').remove();
+        }
+        if( rowText.indexOf( inputText ) == -1 )
+        {
+          tableRowsClass.eq(i).parent().hide();
+        }
+        else
+        {
+          $('.search-sf').remove();
+          tableRowsClass.eq(i).parent().show();
+        }
+      });
+    });
+  });
+
+  function mySearchFunction(get_id, get_id1) {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById(get_id1);
+    filter = input.value.toUpperCase();
+    ul = document.getElementById(get_id);
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+</script>
+<script src="/js/chosen.jquery.min.js"></script>
+<script type="text/javascript">
+  $(".chosen").chosen();
+</script>
+</body>
+</html>

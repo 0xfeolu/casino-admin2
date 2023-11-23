@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="zYMNeDn9zSb2zRkGTDrFelV7OJ45vUPlXFknOjOr">
+  <title>Admin Panel | Starbuy</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="stylesheet" href="/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
+  <link rel="stylesheet" href="/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/chosen.min.css">
+  <link rel="stylesheet" href="/css/app.min.css?v=66">
+  <link rel="stylesheet" href="/css/pagination.css">
+</head>
+
+<body data-sa-theme="7">
+  <main class="main">
+<header class="header">
+      <div class="navigation-trigger hidden-xl-up" data-sa-action="aside-open" data-sa-target=".sidebar">
+        <i class="zmdi zmdi-menu"></i>
+      </div>
+      <div class="logo hidden-sm-down">
+        <h1>
+          <a href="#"><img src="/images/logo.png" class="logo-text-1" /></a>
+        </h1>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="scrollbar-inner">
+        <div class="user">
+          <div class="user__info" data-toggle="dropdown">
+            <div>
+              <div class="user__name">Admin Panel</div>
+            </div>
+          </div>
+        </div>
+
+                
+        <ul class="navigation">
+
+                                    <li class="@photogalleryactive "><a href="/adminDashboard"><i class="zmdi zmdi-view-dashboard"></i> Dashboard</a></li>
+                      
+                      <li class="@photogalleryactive "><a href="/users"><i class="fa fa-users"></i> Users Details</a></li>
+          
+                      <li class="@photogalleryactive "><a href="/usersBalance"><i class="zmdi zmdi-balance-wallet"></i>Users Balance</a></li>
+          
+                                    <li class="@photogalleryactive "><a href="/kycData"><i class="zmdi zmdi-badge-check"></i> KYC Submission (7)</a>
+              </li>
+                      
+                      <li class="@photogalleryactive ">
+            	<a href="/tradeWallet"><i class="fa fa-bank"></i> Income & Expense Details</a>
+            </li>
+          
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-arrow-down"></i> Deposit History (3)</a>
+                <ul>
+                  <div class="sublistsearcbbg">
+                    <div class="searchcoinbg">
+                      <input type="text" class="form-control" id="myInput" onkeyup="mySearchFunction('myUL', 'myInput')" placeholder="Search coin name..." autocomplete="off">
+                    </div>
+                    <div id="myUL">
+                                                                  <li class="@colorsactive"><a href="/deposit/BTC" class=""><i class="fa fa-arrow-right"></i> BTC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/DOGE" class=""><i class="fa fa-arrow-right"></i> DOGE </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/BNB" class=""><i class="fa fa-arrow-right"></i> BNB </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/SOL" class=""><i class="fa fa-arrow-right"></i> SOL </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ADA" class=""><i class="fa fa-arrow-right"></i> ADA </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/XLM" class=""><i class="fa fa-arrow-right"></i> XLM </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/DOT" class=""><i class="fa fa-arrow-right"></i> DOT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ZAR" class=""><i class="fa fa-arrow-right"></i> ZAR  (3) </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USD" class=""><i class="fa fa-arrow-right"></i> USD  (3) </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/DAI" class=""><i class="fa fa-arrow-right"></i> DAI </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/HEX" class=""><i class="fa fa-arrow-right"></i> HEX </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDC" class=""><i class="fa fa-arrow-right"></i> USDC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/SHIB" class=""><i class="fa fa-arrow-right"></i> SHIB </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LUNA" class=""><i class="fa fa-arrow-right"></i> LUNA </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/UST" class=""><i class="fa fa-arrow-right"></i> UST </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/WBTC" class=""><i class="fa fa-arrow-right"></i> WBTC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/UNI" class=""><i class="fa fa-arrow-right"></i> UNI </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/MANA" class=""><i class="fa fa-arrow-right"></i> MANA </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/APE" class=""><i class="fa fa-arrow-right"></i> APE </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/AXS" class=""><i class="fa fa-arrow-right"></i> AXS </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/QNT" class=""><i class="fa fa-arrow-right"></i> QNT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/AAVE" class=""><i class="fa fa-arrow-right"></i> AAVE </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/SAND" class=""><i class="fa fa-arrow-right"></i> SAND </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/WFLOW" class=""><i class="fa fa-arrow-right"></i> WFLOW </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/EOS" class=""><i class="fa fa-arrow-right"></i> EOS </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/FRAX" class=""><i class="fa fa-arrow-right"></i> FRAX </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LUNC" class=""><i class="fa fa-arrow-right"></i> LUNC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/GBP" class=""><i class="fa fa-arrow-right"></i> GBP  (3) </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LBR" class=""><i class="fa fa-arrow-right"></i> LBR </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LEO" class=""><i class="fa fa-arrow-right"></i> LEO </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/VET" class=""><i class="fa fa-arrow-right"></i> VET </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/STR" class=""><i class="fa fa-arrow-right"></i> STR </a></li>
+                                                                </div>
+                  </div>
+                </ul>
+              </li>
+                      
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-arrow-up"></i> External Withdraw History (11) </a>
+                 <ul>
+                  <div class="sublistsearcbbg">
+                    <div class="searchcoinbg">
+                      
+                    </div>
+                    <div id="myUL1">
+                                            <li class="@colorsactive"><a href="/withdraw/BTC" class=""><i class="fa fa-arrow-right"></i> BTC  (3) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/DOGE" class=""><i class="fa fa-arrow-right"></i> DOGE </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/BNB" class=""><i class="fa fa-arrow-right"></i> BNB  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/SOL" class=""><i class="fa fa-arrow-right"></i> SOL  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ADA" class=""><i class="fa fa-arrow-right"></i> ADA </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/XLM" class=""><i class="fa fa-arrow-right"></i> XLM </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/DOT" class=""><i class="fa fa-arrow-right"></i> DOT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ZAR" class=""><i class="fa fa-arrow-right"></i> ZAR </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USD" class=""><i class="fa fa-arrow-right"></i> USD </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/DAI" class=""><i class="fa fa-arrow-right"></i> DAI </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/HEX" class=""><i class="fa fa-arrow-right"></i> HEX </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDC" class=""><i class="fa fa-arrow-right"></i> USDC </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/SHIB" class=""><i class="fa fa-arrow-right"></i> SHIB </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LUNA" class=""><i class="fa fa-arrow-right"></i> LUNA </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/UST" class=""><i class="fa fa-arrow-right"></i> UST </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/WBTC" class=""><i class="fa fa-arrow-right"></i> WBTC </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/UNI" class=""><i class="fa fa-arrow-right"></i> UNI </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/MANA" class=""><i class="fa fa-arrow-right"></i> MANA </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/APE" class=""><i class="fa fa-arrow-right"></i> APE </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/AXS" class=""><i class="fa fa-arrow-right"></i> AXS </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/QNT" class=""><i class="fa fa-arrow-right"></i> QNT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/AAVE" class=""><i class="fa fa-arrow-right"></i> AAVE </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/SAND" class=""><i class="fa fa-arrow-right"></i> SAND </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/WFLOW" class=""><i class="fa fa-arrow-right"></i> WFLOW </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/EOS" class=""><i class="fa fa-arrow-right"></i> EOS </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/FRAX" class=""><i class="fa fa-arrow-right"></i> FRAX </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LUNC" class=""><i class="fa fa-arrow-right"></i> LUNC </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/GBP" class=""><i class="fa fa-arrow-right"></i> GBP </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LBR" class=""><i class="fa fa-arrow-right"></i> LBR  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LEO" class=""><i class="fa fa-arrow-right"></i> LEO  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/VET" class=""><i class="fa fa-arrow-right"></i> VET  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/STR" class=""><i class="fa fa-arrow-right"></i> STR </a></li>
+                                          </div>
+                  </div>
+                </ul>
+              </li>
+                      
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-exchange"></i> Internal Withdraw History </a>
+                 <ul>
+                  <div class="sublistsearcbbg">
+                    <div class="searchcoinbg">
+                      
+                    </div>
+                    <div id="myUL1">
+                                            <li class="@colorsactive"><a href="/internalWithdraw/BTC" class=""><i class="fa fa-arrow-right"></i> BTC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/DOGE" class=""><i class="fa fa-arrow-right"></i> DOGE </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/BNB" class=""><i class="fa fa-arrow-right"></i> BNB </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/SOL" class=""><i class="fa fa-arrow-right"></i> SOL </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ADA" class=""><i class="fa fa-arrow-right"></i> ADA </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/XLM" class=""><i class="fa fa-arrow-right"></i> XLM </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/DOT" class=""><i class="fa fa-arrow-right"></i> DOT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ZAR" class=""><i class="fa fa-arrow-right"></i> ZAR </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USD" class=""><i class="fa fa-arrow-right"></i> USD </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/DAI" class=""><i class="fa fa-arrow-right"></i> DAI </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/HEX" class=""><i class="fa fa-arrow-right"></i> HEX </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDC" class=""><i class="fa fa-arrow-right"></i> USDC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/SHIB" class=""><i class="fa fa-arrow-right"></i> SHIB </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LUNA" class=""><i class="fa fa-arrow-right"></i> LUNA </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/UST" class=""><i class="fa fa-arrow-right"></i> UST </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/WBTC" class=""><i class="fa fa-arrow-right"></i> WBTC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/UNI" class=""><i class="fa fa-arrow-right"></i> UNI </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/MANA" class=""><i class="fa fa-arrow-right"></i> MANA </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/APE" class=""><i class="fa fa-arrow-right"></i> APE </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/AXS" class=""><i class="fa fa-arrow-right"></i> AXS </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/QNT" class=""><i class="fa fa-arrow-right"></i> QNT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/AAVE" class=""><i class="fa fa-arrow-right"></i> AAVE </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/SAND" class=""><i class="fa fa-arrow-right"></i> SAND </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/WFLOW" class=""><i class="fa fa-arrow-right"></i> WFLOW </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/EOS" class=""><i class="fa fa-arrow-right"></i> EOS </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/FRAX" class=""><i class="fa fa-arrow-right"></i> FRAX </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LUNC" class=""><i class="fa fa-arrow-right"></i> LUNC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/GBP" class=""><i class="fa fa-arrow-right"></i> GBP </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LBR" class=""><i class="fa fa-arrow-right"></i> LBR </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LEO" class=""><i class="fa fa-arrow-right"></i> LEO </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/VET" class=""><i class="fa fa-arrow-right"></i> VET </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/STR" class=""><i class="fa fa-arrow-right"></i> STR </a></li>
+                                          </div>
+                  </div>
+                </ul>
+              </li>
+                      
+                          <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-dollar" aria-hidden="true"></i>Orderbook History <span class="pull-right"><i class="fa fa-chevron-down"></i> </span></a>
+                    <ul>
+                        <li class="@photogalleryactive "><a href="/tradeHistory/BUY/BTC/USDT"><i class="fa fa-shopping-cart"></i> Buy Trade History</a></li>
+
+                        <li class="@photogalleryactive "><a href="/tradeHistory/SELL/BTC/USDT"><i class="fa fa-shopping-bag"></i> Sell trade History</a></li>
+
+                        <li class="@photogalleryactive "><a href="/openOrders/BTC/USDT"><i class="fa fa-external-link"></i> Open Orders History</a></li>
+                    </ul>
+                </li>
+            
+                      <li class="navigation__sub navigation__sub--toggled ">
+              <a href="#"><i class="fa fa-stack-exchange" aria-hidden="true"></i>P2P Advertisements <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                  <ul>
+
+                  <li class="@colorsactive ">
+                    <a href="/advertisement/Buy">
+                        <i class="fa fa-arrow-right"></i> Buy Advertisement
+                    </a>
+                  </li>
+
+                  <li class="@colorsactive ">
+                      <a href="/advertisement/Sell"><i class="fa fa-arrow-right"></i> Sell Advertisement
+                      </a>
+                  </li>
+                </ul>
+            </li>
+          
+          <li class="navigation__sub navigation__sub--toggled ">
+              <a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>P2P Trades<span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                  <ul>
+
+                  <li class="@photogalleryactive "><a href="/pendingTrade"><i class="fa fa-arrow-right"></i>Pending Trade</a>
+                  </li>
+
+                  <li class="@photogalleryactive "><a href="/completedTrade"><i class="fa fa-arrow-right"></i></i>Completed Trade</a>
+                  </li>
+
+                  <li class="@photogalleryactive "><a href="/cancelTrade"><i class="fa fa-arrow-right"></i>Cancelled Trade</a>
+                  </li>
+                </ul>
+            </li>
+
+                      <li class="@photogalleryactive "><a href="/disputeTrade"><i class="zmdi zmdi-alert-triangle"></i>Dispute Trade <span class="pull-right">(2)</span></a>
+            </li>
+          
+                      <li class="@photogalleryactive navigation__active"><a href="/support"><i class="zmdi zmdi-ticket-star"></i> Support Ticket <span class="pull-right"> (0)</span></a></li>
+          
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="zmdi zmdi-code-setting"></i> Commission Settings <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                <ul>
+
+                                                            <li class="@photogalleryactive "><a href="/depositSettings"><i class="fa fa-arrow-right"></i> Deposit Commission</a></li>
+                                      
+                                                            <li class="@photogalleryactive "><a href="/withdrawcryptoSettings"><i class="fa fa-arrow-right"></i> Withdraw Commission</a></li>
+                                      
+                                      <li class="@colorsactive"><a href="/tradeCommissionSettings" class=""><i class="fa fa-arrow-down"></i> P2P Trade Commission</a></li>
+                                  </ul>
+              </li>
+                      
+                      <li class="@photogalleryactive ">
+              <a href="/ercTokenSettings"><i class="fa fa-plus-square"></i>ERC Token Settings</a></li>
+          
+                      <li class="@photogalleryactive ">
+              <a href="/bepTokenSettings"><i class="fa fa-plus-square"></i>BSC Token Settings</a></li>
+          
+          <li class="navigation__sub navigation__sub--toggled ">
+            <a href="#">
+              <i class="fa fa-bank"></i> Company Bank Details
+              <span class="pull-right">
+                <i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span>
+            </a>
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                            <li class="@photogalleryactive ">
+                          <a href="/adminBank/ZAR"><i class="fa fa-arrow-right"></i> ZAR</a>
+                  </li>
+                                                                <li class="@photogalleryactive ">
+                          <a href="/adminBank/USD"><i class="fa fa-arrow-right"></i> USD</a>
+                  </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="@photogalleryactive ">
+                          <a href="/adminBank/GBP"><i class="fa fa-arrow-right"></i> GBP</a>
+                  </li>
+                                                                                                                                                                                                                                                                                          </ul>
+          </li>
+
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="zmdi zmdi-assignment-o"></i> Trade Settings <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                <ul>
+                                                            <li class="@colorsactive"><a href="/tradeSettings" class=""><i class="fa fa-arrow-right"></i> Pair Settings </a></li>
+                                                      </ul>
+              </li>
+                      
+                    <li class="navigation__sub navigation__sub--toggled ">
+              <a href="#">
+                  <i class="zmdi zmdi-card-giftcard" aria-hidden="true"></i>Commission History
+                  <span class="pull-right">
+                      <i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i>
+                  </span>
+              </a>
+              <ul>
+                  <li class="@colorsactive">
+                      <a href="/trade-commission" class="">
+                        <i class="fa fa-arrow-right"></i> P2P Trade
+                      </a>
+                  </li>
+              </ul>
+          </li>
+          
+          <li class="@photogalleryactive ">
+              <a href="/paymentmethod">
+                  <i class="fa fa-bank"></i> Payment Method
+              </a>
+          </li>
+
+                      <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-history" aria-hidden="true"></i>CMS Settings <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                <ul>
+                                      <li class="@colorsactive"><a href="/aboutus" class=""><i class="fa fa-arrow-right"></i> About Us </a></li> 
+                  
+                                      <li class="@colorsactive"><a href="/privacy" class=""><i class="fa fa-arrow-right"></i> Privacy Policy </a></li>
+                  
+                                      <li class="@colorsactive"><a href="/terms" class=""><i class="fa fa-arrow-right"></i> Terms & Conditions </a></li>
+                  
+                  
+                            <li class="@colorsactive">
+                                        <a href="/blogs" class="">
+                                            <i class="fa fa-arrow-right"></i> Blogs
+                                        </a>
+                                 </li>
+                       
+
+                                      <li class="@colorsactive"><a href="/features" class=""><i class="fa fa-arrow-right"></i> Features </a></li>
+                  
+                                       <li class="@colorsactive"><a href="/followus" class=""><i class="fa fa-arrow-right"></i> Follow Us </a></li>
+                  
+                                      <li class="@colorsactive"><a href="/howwork" class=""><i class="fa fa-arrow-right"></i> How It Works</a></li>
+                  
+                                      <li class="@colorsactive"><a href="/faq" class=""><i class="fa fa-arrow-right"></i> FAQ </a></li>
+                                                      
+                    <li class="@colorsactive"><a href="/newsletter" class=""><i class="fa fa-arrow-right"></i> Newsletter</a></li>
+                     
+                       <li class="@colorsactive"><a href="/whitepaper" class=""> <i class="fa fa-arrow-right"></i>White Paper </a></li>
+                 
+                </ul>
+            </li>
+          
+                      <li class="@photogalleryactive "><a href="/security"><i class="zmdi zmdi-settings" aria-hidden="true"></i>Security Settings </a></li>
+          
+           <li class="@photogalleryactive "><a href="/subscribers"><i class="fa fa-rocket" aria-hidden="true"></i>Subscribers </a></li>
+
+          <li class="@photogalleryactive">
+            <a href="/logout">
+              <i class="zmdi zmdi-power-off"></i>  Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <section class="content">
+  <header class="content__title">
+    <h1>List of Support Ticket</h1>
+  </header>
+  <div class="card">
+    <div class="card-body">
+            <form action="/supportSearch" method="post" autocomplete="off">
+        <input type="hidden" name="_token" value="zYMNeDn9zSb2zRkGTDrFelV7OJ45vUPlXFknOjOr">
+        <div class="row searchnrow">
+          <div class="col-md-3">                
+            <input type="text" name="searchitem" class="form-control" placeholder="Search for Username / Ticket ID" value= "">
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="statdate" class="form-control date-picker" id="datepicker" value="" placeholder="Start Date" />
+          </div>
+          <div class="col-md-3">
+            <input type="text" name="enddate" class="form-control date-picker" id="datepicker2" value="" placeholder="End Date" />
+          </div>
+          <div class="col-md-3">
+            <button type="submit" class="btn btn-success user_date"><i class="fa fa-search"></i> Search</button>
+            <a class="btn btn-warning btn-xs" href="/support"> <i class="fa fa-refresh"></i> Clear </a>
+          </div>
+        </div>
+      </form>
+      <br/>
+      <br/>
+            <div class="table-responsive">
+        <table class="table" id="dows">
+          <thead>
+            <tr>
+              <th>Date & Time</th>
+              <th>Ticket Id</th>
+              <th>Username</th>
+              <th>Subject</th>
+              <th>Message</th>
+              <th>Unread Msg</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+                                    <tr>
+              <td>08/09/2023 06:52:16</td>
+              <td>SB28718</td>
+              <td><a href="/users/eyJpdiI6Ikt6WDhWTk1nWnFyY0Y2TFZ1SXVPdGc9PSIsInZhbHVlIjoiS1pVbitCU0w0Z2l0dDlZbXpodHZxdz09IiwibWFjIjoiNzljZDhiNjM4OWRkOGEzMzRlNzM4MDE0MjM0ZWNhNmVjZDMxODZiZDM1YzZjMGI0ZDI4ZTRkNmNjODVlM2RjNSJ9">testone</a></td>
+              <td>Hello Admin</td>
+              <td>This is test me...</td>
+              <td>0</td>
+              <td> Completed </td>
+              <td>
+                <a class="btn btn-success btn-sm"  href="/support/eyJpdiI6IklVNGh6RmUzSUFBXC85QXdmT0RLeWh3PT0iLCJ2YWx1ZSI6IkhjTWpyUXFvWTE4cXF4a1c0MmE5aHc9PSIsIm1hYyI6IjA3OWM4ZDA2MjFjODkxMTgxZjRhMTFjNjE1MzcxOTgyNTY1MjM3ODJhNjBmYWQ3NTA4N2EwOTYxOTY5NTgxOGEifQ==" class="btn btn-info" data-toggle="tooltip" title="Chat"><i class="fa fa-comments-o"></i> </a>
+                                <span data-toggle="tooltip" title="Delete">
+                  <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/deleteChat/eyJpdiI6InhhZ1djWTJDMHhMRGVvREhZK0tIckE9PSIsInZhbHVlIjoiazZXT0RKd3UzeDNuNXJrQjdxV1lMQT09IiwibWFjIjoiNjRhZDdlNjAwOTU5ZDMzMjY5MjNmMTVlMmI5ZGMwMmRkMDk2MjhjM2UxZGI5YmViMDcyMDI2MWFmOGIwMDlhZSJ9"><i class="fa fa-trash-o"></i> </a>
+                </span>
+              </td>
+            </tr>
+                        <tr>
+              <td>07/09/2023 12:43:01</td>
+              <td>SB64508</td>
+              <td><a href="/users/eyJpdiI6IitScG80STB6enhZZXVIZSs1dUpldUE9PSIsInZhbHVlIjoiQ0xqRUowdTNMNExmeWQ3ajZueTljZz09IiwibWFjIjoiZDlhNGM2ZWRiOGE3ZTg0N2Q0MmViMDVlMDEwMGI1YWYzMmI5MDQyZmIxMGU0ZGMyMTJkMWY3MzNiNTQ4MzE4ZCJ9">liam</a></td>
+              <td>...</td>
+              <td>...</td>
+              <td>0</td>
+              <td> Running </td>
+              <td>
+                <a class="btn btn-success btn-sm"  href="/support/eyJpdiI6IjFmTEM4OTFWMStncXNwZ3U5RXdsOXc9PSIsInZhbHVlIjoiMDBGXC8xckhISG5MOWsxQ1piNXpTOVE9PSIsIm1hYyI6IjRhYjE4MTA0NTA1NTViZWVhOWM1ZWIzNzJjZmMwZmQ1MDdkY2EyY2RmN2E1OWJmNWRkZTI1NDBhYWRjMmQ3MjcifQ==" class="btn btn-info" data-toggle="tooltip" title="Chat"><i class="fa fa-comments-o"></i> </a>
+                                <span data-toggle="tooltip" title="Mark as Complete">
+                  <a class="btn btn-info btn-sm" data-toggle="modal" data-target="#confirm-enable" data-href="/completeChat/eyJpdiI6ImdxNmlOVm54dmFwZzZ2eHZ6aDg5VGc9PSIsInZhbHVlIjoiZ1NuRStVWVA4ZUp3ejFMbDVlUE1YZz09IiwibWFjIjoiOGUyOTM4OTk1NmFjZmE5YTdkZDkxYzU1M2MwMjg1NDE2YzgzNzY2NDdlNDg5MjE1YjNkZjM5YjY4YzU2NGI0OCJ9"><i class="fa fa-check"></i> </a>
+                </span>
+                                <span data-toggle="tooltip" title="Delete">
+                  <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/deleteChat/eyJpdiI6InNERDM5WER3MXJDNXFNRnhFZzBTN3c9PSIsInZhbHVlIjoiXC9BZVVRMkJTWEZ3dFVXNVUwSkkxVVE9PSIsIm1hYyI6IjQwNjZmMmM3NjkyNzJiZmY3YTcwZTFjZTBlYWMxMGNlZmRkY2UzMGRhZTU3MTRlYjBhNTQ4MzY0NmRkZWI2MmQifQ=="><i class="fa fa-trash-o"></i> </a>
+                </span>
+              </td>
+            </tr>
+                        <tr>
+              <td>07/09/2023 12:38:43</td>
+              <td>SB27953</td>
+              <td><a href="/users/eyJpdiI6IkJEeWcxa2pEQVZyVWJVbCtmNUR2eXc9PSIsInZhbHVlIjoib0ZIUDFPZmhTQno0WWUxTFwvU0pZeEE9PSIsIm1hYyI6ImNhMTEzZGYxZWIwMTVkMTEyNDMwMWRjODU5MDlkMTcyNWQ2NDMzYjYyYjJhNTRlZTAzMTc4NGI1NmI0MTFkZjkifQ==">live</a></td>
+              <td>Test 2</td>
+              <td>Test 2.1</td>
+              <td>0</td>
+              <td> Running </td>
+              <td>
+                <a class="btn btn-success btn-sm"  href="/support/eyJpdiI6IjJRa2ZCTGJyZER5MDI0enZRdkZRQVE9PSIsInZhbHVlIjoicTlCWEpVSldBM3RFNFdGU1pcL3BackE9PSIsIm1hYyI6IjQ0MTAzNGE4NDVlNGMwYjJjOTgzOWM4MWZjMzg3OWQxYmE4YzdiNzFiZTcyYjYxZGI4MTM4Y2M4ZmYxM2Q0Y2EifQ==" class="btn btn-info" data-toggle="tooltip" title="Chat"><i class="fa fa-comments-o"></i> </a>
+                                <span data-toggle="tooltip" title="Mark as Complete">
+                  <a class="btn btn-info btn-sm" data-toggle="modal" data-target="#confirm-enable" data-href="/completeChat/eyJpdiI6Im14bFh2aGJvUW5RTElvTVd6bjM1VWc9PSIsInZhbHVlIjoiY2VhaFQ4cnljc1N2RmtNXC9OZ202VUE9PSIsIm1hYyI6ImU3MGFlOGM5OTgwZDRlZTNkZWMyY2I3YjljMmFlZmI1ODJmMzVmMzYxNWMwZTZkNWZkNDBiNDk5NWU2ZmUwZTMifQ=="><i class="fa fa-check"></i> </a>
+                </span>
+                                <span data-toggle="tooltip" title="Delete">
+                  <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/deleteChat/eyJpdiI6InVlYmMxYTd4Mm9NaWh6MWlEb01lRWc9PSIsInZhbHVlIjoibHZyYnhTRFNVdyt2SmdvQ3hZU2p3UT09IiwibWFjIjoiZTkwNTk5NDQ2ZDY1M2I2MzZjMmNmM2JlYTc1NWVhOWI1MDg4NDNhZGNmYTUxMWEyMmM3ZTNhMDMxMmMwOTE0NiJ9"><i class="fa fa-trash-o"></i> </a>
+                </span>
+              </td>
+            </tr>
+                        <tr>
+              <td>07/09/2023 12:38:34</td>
+              <td>SB10836</td>
+              <td><a href="/users/eyJpdiI6IndlZCtNWCs2WUJ3TWNKY3FkK3NHcGc9PSIsInZhbHVlIjoiRWJyazQzMldcL29oWFA0THhNS2VQaVE9PSIsIm1hYyI6Ijc0MDZlYzY3YzUxY2MxOWZhZDc4NzRkNTlhNjU4MTEwNzNiOWQ4ODRmNjI5ZjRhOWZiZDJmOTgwM2JhYjEyYTYifQ==">live</a></td>
+              <td>Test 1</td>
+              <td>Test 1.1</td>
+              <td>0</td>
+              <td> Completed </td>
+              <td>
+                <a class="btn btn-success btn-sm"  href="/support/eyJpdiI6Ik5mUlFFc0JWWHlMSWVRSmRvYjRRRlE9PSIsInZhbHVlIjoiRzBxTmlqbXZVQmpCcnlEZXZvQndPZz09IiwibWFjIjoiYTE2YzAwZWQ3ZjU4MTg3MGZmOTRmMGJlMTUwMzhmNDNjMDU0MjdiNzQwMjQ3Mjg4ZTRhMWNhODkzZDAzZDY0NCJ9" class="btn btn-info" data-toggle="tooltip" title="Chat"><i class="fa fa-comments-o"></i> </a>
+                                <span data-toggle="tooltip" title="Delete">
+                  <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/deleteChat/eyJpdiI6ImZDMVRyWmttY1hKSDdMdEhxRFJiQ2c9PSIsInZhbHVlIjoibys5QTVYOTE3VHZxVlBxXC9RZUM0RXc9PSIsIm1hYyI6IjIxOWE5YTYxOTExZjBiODJlNjk5NDdlM2IyMmY2NjgzOWI4ZjIzNzY2NDY3NmMxODFjYzE2YWUyZjY3MDg3NzQifQ=="><i class="fa fa-trash-o"></i> </a>
+                </span>
+              </td>
+            </tr>
+                                  </tbody>
+        </table>
+        <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
+          <div class="pagination-tt clearfix">
+                        
+                      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade site-modal" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Delete Chat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          Are you sure, do you want to delete this chat?
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-success btn-ok">Yes</a>
+          <button type="button" class="btn btn-success" data-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade site-modal" id="confirm-enable" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" >
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Complete Chat</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          Are you sure, do you want to complete this chat?
+        </div>
+        <div class="modal-footer">
+          <a class="btn btn-success btn-ok">Yes</a>
+          <button type="button" class="btn btn-success" data-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+  </style>
+  <footer class="footer hidden-xs-down">
+    <p>Copyright © 2023 Starbuy. All Rights Reserved.</p>
+  </footer>
+</section>
+</main>
+<script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+<script src="/vendors/bower_components/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+<script src="/vendors/bower_components/flatpickr/dist/flatpickr.min.js"></script>
+<script src="/vendors/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="/vendors/bower_components/jszip/dist/jszip.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="/js/app.min.js"></script>
+<script src="/ckeditor/ckeditor.js"></script>
+<script src="/js/validation.js?v=297"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  $(document).ready(function() {
+    var activeSystemClass = $('.list-group-item.active');
+    $('#system-search').keyup( function() {
+      var that = this;
+      var tableBody = $('.table-list-search tbody');
+      var tableRowsClass = $('.table-list-search tbody tr .coinnamesearch');
+      $('.search-sf').remove();
+      if(tableRowsClass.children(':visible').length == 0 && $('#system-search').val() != '')
+      {
+        tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">No coin found.</td></tr>');
+      }
+      tableRowsClass.each( function(i, val) {
+        var rowText = $(val).text().toLowerCase();
+        var inputText = $(that).val().toLowerCase();
+        if(inputText != '')
+        {
+          $('.search-query-sf').remove();
+        }
+        else
+        {
+          $('.search-query-sf').remove();
+        }
+        if( rowText.indexOf( inputText ) == -1 )
+        {
+          tableRowsClass.eq(i).parent().hide();
+        }
+        else
+        {
+          $('.search-sf').remove();
+          tableRowsClass.eq(i).parent().show();
+        }
+      });
+    });
+  });
+
+  function mySearchFunction(get_id, get_id1) {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById(get_id1);
+    filter = input.value.toUpperCase();
+    ul = document.getElementById(get_id);
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+</script>
+<script src="/js/chosen.jquery.min.js"></script>
+<script type="text/javascript">
+  $(".chosen").chosen();
+</script>
+</body>
+</html>

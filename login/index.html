@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Admin Panel | Starbuy</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="stylesheet" href="/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" href="/css/app.min.css">
+</head>
+<body data-sa-theme="7">
+  <div class="logininnerbox">
+  <div class="login">
+    <div class="login__block active" id="l-login"> 
+      <div class="loginwhitebox">
+         <a class="" href=""><img src="/images/logo.png" class="logo-text" /></a>
+          <div class="login__block__body">
+            
+
+
+<form id="login_form" method="POST" action="/login" autocomplete="off"> 
+	<input type="hidden" name="_token" value="C6qp7zBUAxAWjHKYs3ALdv6A7k4rFeqQyOFLsz50">	<div class="form-group ">
+
+		<input type="text" class="form-control" name="email" id="email" placeholder="Email or Username *"  value="" >
+			</div>
+	<div class="form-group ">
+
+		<input type="password" name="password" id="password" class="form-control" placeholder="Password *">
+			</div>
+	<div class="form-group ">
+
+		<div class="g-recaptcha" data-sitekey="6LcXdQMoAAAAAFAiGEmVjpKORMv621e324C5lUuv"></div>
+			</div>
+
+	<div class="form-group text-center">
+		<button type="submit" name="adminlogin" id="adminlogin" class="btn btn-success login__block__btn">Login</button>
+	</div>
+</form>
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+<script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src="/js/app.min.js"></script>
+<script src="https://ed45.starbuy.io/js/simplebar.js"></script>
+<script>
+      $(document).ready(function(){
+        $('form').attr('autocomplete', 'off');
+      });
+    $("body").addClass("loginpage");
+
+  $('#login_form').on('submit', function(){
+  $('#adminlogin').attr('disabled', true);
+  $('#adminlogin').html('Loading...');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="zYMNeDn9zSb2zRkGTDrFelV7OJ45vUPlXFknOjOr">
+  <title>Admin Panel | Starbuy</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+  <link rel="stylesheet" href="/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/animate.css/animate.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
+  <link rel="stylesheet" href="/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css">
+  <link rel="stylesheet" href="/vendors/bower_components/flatpickr/dist/flatpickr.min.css" />
+  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/chosen.min.css">
+  <link rel="stylesheet" href="/css/app.min.css?v=24">
+  <link rel="stylesheet" href="/css/pagination.css">
+</head>
+
+<body data-sa-theme="7">
+  <main class="main">
+<header class="header">
+      <div class="navigation-trigger hidden-xl-up" data-sa-action="aside-open" data-sa-target=".sidebar">
+        <i class="zmdi zmdi-menu"></i>
+      </div>
+      <div class="logo hidden-sm-down">
+        <h1>
+          <a href="#"><img src="/images/logo.png" class="logo-text-1" /></a>
+        </h1>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <div class="scrollbar-inner">
+        <div class="user">
+          <div class="user__info" data-toggle="dropdown">
+            <div>
+              <div class="user__name">Admin Panel</div>
+            </div>
+          </div>
+        </div>
+
+                
+        <ul class="navigation">
+
+                                    <li class="@photogalleryactive "><a href="/adminDashboard"><i class="zmdi zmdi-view-dashboard"></i> Dashboard</a></li>
+                      
+                      <li class="@photogalleryactive "><a href="/users"><i class="fa fa-users"></i> Users Details</a></li>
+          
+                      <li class="@photogalleryactive "><a href="/usersBalance"><i class="zmdi zmdi-balance-wallet"></i>Users Balance</a></li>
+          
+                                    <li class="@photogalleryactive "><a href="/kycData"><i class="zmdi zmdi-badge-check"></i> KYC Submission (7)</a>
+              </li>
+                      
+                      <li class="@photogalleryactive ">
+            	<a href="/tradeWallet"><i class="fa fa-bank"></i> Income & Expense Details</a>
+            </li>
+          
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-arrow-down"></i> Deposit History (3)</a>
+                <ul>
+                  <div class="sublistsearcbbg">
+                    <div class="searchcoinbg">
+                      <input type="text" class="form-control" id="myInput" onkeyup="mySearchFunction('myUL', 'myInput')" placeholder="Search coin name..." autocomplete="off">
+                    </div>
+                    <div id="myUL">
+                                                                  <li class="@colorsactive"><a href="/deposit/BTC" class=""><i class="fa fa-arrow-right"></i> BTC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/DOGE" class=""><i class="fa fa-arrow-right"></i> DOGE </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/BNB" class=""><i class="fa fa-arrow-right"></i> BNB </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/SOL" class=""><i class="fa fa-arrow-right"></i> SOL </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ADA" class=""><i class="fa fa-arrow-right"></i> ADA </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/XLM" class=""><i class="fa fa-arrow-right"></i> XLM </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/DOT" class=""><i class="fa fa-arrow-right"></i> DOT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ZAR" class=""><i class="fa fa-arrow-right"></i> ZAR  (3) </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USD" class=""><i class="fa fa-arrow-right"></i> USD  (3) </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/DAI" class=""><i class="fa fa-arrow-right"></i> DAI </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/HEX" class=""><i class="fa fa-arrow-right"></i> HEX </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDC" class=""><i class="fa fa-arrow-right"></i> USDC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/SHIB" class=""><i class="fa fa-arrow-right"></i> SHIB </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LUNA" class=""><i class="fa fa-arrow-right"></i> LUNA </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/UST" class=""><i class="fa fa-arrow-right"></i> UST </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/WBTC" class=""><i class="fa fa-arrow-right"></i> WBTC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/UNI" class=""><i class="fa fa-arrow-right"></i> UNI </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/MANA" class=""><i class="fa fa-arrow-right"></i> MANA </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/APE" class=""><i class="fa fa-arrow-right"></i> APE </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/AXS" class=""><i class="fa fa-arrow-right"></i> AXS </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/QNT" class=""><i class="fa fa-arrow-right"></i> QNT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/AAVE" class=""><i class="fa fa-arrow-right"></i> AAVE </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/SAND" class=""><i class="fa fa-arrow-right"></i> SAND </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/WFLOW" class=""><i class="fa fa-arrow-right"></i> WFLOW </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/EOS" class=""><i class="fa fa-arrow-right"></i> EOS </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/FRAX" class=""><i class="fa fa-arrow-right"></i> FRAX </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LUNC" class=""><i class="fa fa-arrow-right"></i> LUNC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/GBP" class=""><i class="fa fa-arrow-right"></i> GBP  (3) </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LBR" class=""><i class="fa fa-arrow-right"></i> LBR </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/LEO" class=""><i class="fa fa-arrow-right"></i> LEO </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/VET" class=""><i class="fa fa-arrow-right"></i> VET </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                                                                        <li class="@colorsactive"><a href="/deposit/STR" class=""><i class="fa fa-arrow-right"></i> STR </a></li>
+                                                                </div>
+                  </div>
+                </ul>
+              </li>
+                      
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-arrow-up"></i> External Withdraw History (11) </a>
+                 <ul>
+                  <div class="sublistsearcbbg">
+                    <div class="searchcoinbg">
+                      
+                    </div>
+                    <div id="myUL1">
+                                            <li class="@colorsactive"><a href="/withdraw/BTC" class=""><i class="fa fa-arrow-right"></i> BTC  (3) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/DOGE" class=""><i class="fa fa-arrow-right"></i> DOGE </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/BNB" class=""><i class="fa fa-arrow-right"></i> BNB  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/SOL" class=""><i class="fa fa-arrow-right"></i> SOL  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ADA" class=""><i class="fa fa-arrow-right"></i> ADA </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/XLM" class=""><i class="fa fa-arrow-right"></i> XLM </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/DOT" class=""><i class="fa fa-arrow-right"></i> DOT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ZAR" class=""><i class="fa fa-arrow-right"></i> ZAR </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USD" class=""><i class="fa fa-arrow-right"></i> USD </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/DAI" class=""><i class="fa fa-arrow-right"></i> DAI </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/HEX" class=""><i class="fa fa-arrow-right"></i> HEX </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDC" class=""><i class="fa fa-arrow-right"></i> USDC </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/SHIB" class=""><i class="fa fa-arrow-right"></i> SHIB </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LUNA" class=""><i class="fa fa-arrow-right"></i> LUNA </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/UST" class=""><i class="fa fa-arrow-right"></i> UST </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/WBTC" class=""><i class="fa fa-arrow-right"></i> WBTC </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/UNI" class=""><i class="fa fa-arrow-right"></i> UNI </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/MANA" class=""><i class="fa fa-arrow-right"></i> MANA </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/APE" class=""><i class="fa fa-arrow-right"></i> APE </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/AXS" class=""><i class="fa fa-arrow-right"></i> AXS </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/QNT" class=""><i class="fa fa-arrow-right"></i> QNT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/AAVE" class=""><i class="fa fa-arrow-right"></i> AAVE </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/SAND" class=""><i class="fa fa-arrow-right"></i> SAND </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/WFLOW" class=""><i class="fa fa-arrow-right"></i> WFLOW </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/EOS" class=""><i class="fa fa-arrow-right"></i> EOS </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/FRAX" class=""><i class="fa fa-arrow-right"></i> FRAX </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LUNC" class=""><i class="fa fa-arrow-right"></i> LUNC </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/GBP" class=""><i class="fa fa-arrow-right"></i> GBP </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LBR" class=""><i class="fa fa-arrow-right"></i> LBR  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/LEO" class=""><i class="fa fa-arrow-right"></i> LEO  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/VET" class=""><i class="fa fa-arrow-right"></i> VET  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH  (1) </a></li>
+                                            <li class="@colorsactive"><a href="/withdraw/STR" class=""><i class="fa fa-arrow-right"></i> STR </a></li>
+                                          </div>
+                  </div>
+                </ul>
+              </li>
+                      
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-exchange"></i> Internal Withdraw History </a>
+                 <ul>
+                  <div class="sublistsearcbbg">
+                    <div class="searchcoinbg">
+                      
+                    </div>
+                    <div id="myUL1">
+                                            <li class="@colorsactive"><a href="/internalWithdraw/BTC" class=""><i class="fa fa-arrow-right"></i> BTC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/DOGE" class=""><i class="fa fa-arrow-right"></i> DOGE </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/BNB" class=""><i class="fa fa-arrow-right"></i> BNB </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/SOL" class=""><i class="fa fa-arrow-right"></i> SOL </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ADA" class=""><i class="fa fa-arrow-right"></i> ADA </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/XLM" class=""><i class="fa fa-arrow-right"></i> XLM </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/DOT" class=""><i class="fa fa-arrow-right"></i> DOT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ZAR" class=""><i class="fa fa-arrow-right"></i> ZAR </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USD" class=""><i class="fa fa-arrow-right"></i> USD </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/DAI" class=""><i class="fa fa-arrow-right"></i> DAI </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/HEX" class=""><i class="fa fa-arrow-right"></i> HEX </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDC" class=""><i class="fa fa-arrow-right"></i> USDC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/SHIB" class=""><i class="fa fa-arrow-right"></i> SHIB </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LUNA" class=""><i class="fa fa-arrow-right"></i> LUNA </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/UST" class=""><i class="fa fa-arrow-right"></i> UST </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/WBTC" class=""><i class="fa fa-arrow-right"></i> WBTC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/UNI" class=""><i class="fa fa-arrow-right"></i> UNI </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/MANA" class=""><i class="fa fa-arrow-right"></i> MANA </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/APE" class=""><i class="fa fa-arrow-right"></i> APE </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/AXS" class=""><i class="fa fa-arrow-right"></i> AXS </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/QNT" class=""><i class="fa fa-arrow-right"></i> QNT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/AAVE" class=""><i class="fa fa-arrow-right"></i> AAVE </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/SAND" class=""><i class="fa fa-arrow-right"></i> SAND </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/WFLOW" class=""><i class="fa fa-arrow-right"></i> WFLOW </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LINK" class=""><i class="fa fa-arrow-right"></i> LINK </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/EOS" class=""><i class="fa fa-arrow-right"></i> EOS </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/FRAX" class=""><i class="fa fa-arrow-right"></i> FRAX </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ATOM" class=""><i class="fa fa-arrow-right"></i> ATOM </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LUNC" class=""><i class="fa fa-arrow-right"></i> LUNC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/GBP" class=""><i class="fa fa-arrow-right"></i> GBP </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LBR" class=""><i class="fa fa-arrow-right"></i> LBR </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/XRP" class=""><i class="fa fa-arrow-right"></i> XRP </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/MATIC" class=""><i class="fa fa-arrow-right"></i> MATIC </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/LEO" class=""><i class="fa fa-arrow-right"></i> LEO </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/VET" class=""><i class="fa fa-arrow-right"></i> VET </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/USDT" class=""><i class="fa fa-arrow-right"></i> USDT </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/ETH" class=""><i class="fa fa-arrow-right"></i> ETH </a></li>
+                                            <li class="@colorsactive"><a href="/internalWithdraw/STR" class=""><i class="fa fa-arrow-right"></i> STR </a></li>
+                                          </div>
+                  </div>
+                </ul>
+              </li>
+                      
+                          <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-dollar" aria-hidden="true"></i>Orderbook History <span class="pull-right"><i class="fa fa-chevron-down"></i> </span></a>
+                    <ul>
+                        <li class="@photogalleryactive "><a href="/tradeHistory/BUY/BTC/USDT"><i class="fa fa-shopping-cart"></i> Buy Trade History</a></li>
+
+                        <li class="@photogalleryactive "><a href="/tradeHistory/SELL/BTC/USDT"><i class="fa fa-shopping-bag"></i> Sell trade History</a></li>
+
+                        <li class="@photogalleryactive "><a href="/openOrders/BTC/USDT"><i class="fa fa-external-link"></i> Open Orders History</a></li>
+                    </ul>
+                </li>
+            
+                      <li class="navigation__sub navigation__sub--toggled ">
+              <a href="#"><i class="fa fa-stack-exchange" aria-hidden="true"></i>P2P Advertisements <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                  <ul>
+
+                  <li class="@colorsactive ">
+                    <a href="/advertisement/Buy">
+                        <i class="fa fa-arrow-right"></i> Buy Advertisement
+                    </a>
+                  </li>
+
+                  <li class="@colorsactive ">
+                      <a href="/advertisement/Sell"><i class="fa fa-arrow-right"></i> Sell Advertisement
+                      </a>
+                  </li>
+                </ul>
+            </li>
+          
+          <li class="navigation__sub navigation__sub--toggled ">
+              <a href="#"><i class="fa fa-bar-chart" aria-hidden="true"></i>P2P Trades<span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                  <ul>
+
+                  <li class="@photogalleryactive "><a href="/pendingTrade"><i class="fa fa-arrow-right"></i>Pending Trade</a>
+                  </li>
+
+                  <li class="@photogalleryactive "><a href="/completedTrade"><i class="fa fa-arrow-right"></i></i>Completed Trade</a>
+                  </li>
+
+                  <li class="@photogalleryactive "><a href="/cancelTrade"><i class="fa fa-arrow-right"></i>Cancelled Trade</a>
+                  </li>
+                </ul>
+            </li>
+
+                      <li class="@photogalleryactive navigation__active"><a href="/disputeTrade"><i class="zmdi zmdi-alert-triangle"></i>Dispute Trade <span class="pull-right">(2)</span></a>
+            </li>
+          
+                      <li class="@photogalleryactive "><a href="/support"><i class="zmdi zmdi-ticket-star"></i> Support Ticket <span class="pull-right"> (0)</span></a></li>
+          
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="zmdi zmdi-code-setting"></i> Commission Settings <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                <ul>
+
+                                                            <li class="@photogalleryactive "><a href="/depositSettings"><i class="fa fa-arrow-right"></i> Deposit Commission</a></li>
+                                      
+                                                            <li class="@photogalleryactive "><a href="/withdrawcryptoSettings"><i class="fa fa-arrow-right"></i> Withdraw Commission</a></li>
+                                      
+                                      <li class="@colorsactive"><a href="/tradeCommissionSettings" class=""><i class="fa fa-arrow-down"></i> P2P Trade Commission</a></li>
+                                  </ul>
+              </li>
+                      
+                      <li class="@photogalleryactive ">
+              <a href="/ercTokenSettings"><i class="fa fa-plus-square"></i>ERC Token Settings</a></li>
+          
+                      <li class="@photogalleryactive ">
+              <a href="/bepTokenSettings"><i class="fa fa-plus-square"></i>BSC Token Settings</a></li>
+          
+          <li class="navigation__sub navigation__sub--toggled ">
+            <a href="#">
+              <i class="fa fa-bank"></i> Company Bank Details
+              <span class="pull-right">
+                <i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span>
+            </a>
+            <ul>
+                                                                                                                                                                                                                                                                                                                                                            <li class="@photogalleryactive ">
+                          <a href="/adminBank/ZAR"><i class="fa fa-arrow-right"></i> ZAR</a>
+                  </li>
+                                                                <li class="@photogalleryactive ">
+                          <a href="/adminBank/USD"><i class="fa fa-arrow-right"></i> USD</a>
+                  </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="@photogalleryactive ">
+                          <a href="/adminBank/GBP"><i class="fa fa-arrow-right"></i> GBP</a>
+                  </li>
+                                                                                                                                                                                                                                                                                          </ul>
+          </li>
+
+                                    <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="zmdi zmdi-assignment-o"></i> Trade Settings <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                <ul>
+                                                            <li class="@colorsactive"><a href="/tradeSettings" class=""><i class="fa fa-arrow-right"></i> Pair Settings </a></li>
+                                                      </ul>
+              </li>
+                      
+                    <li class="navigation__sub navigation__sub--toggled ">
+              <a href="#">
+                  <i class="zmdi zmdi-card-giftcard" aria-hidden="true"></i>Commission History
+                  <span class="pull-right">
+                      <i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i>
+                  </span>
+              </a>
+              <ul>
+                  <li class="@colorsactive">
+                      <a href="/trade-commission" class="">
+                        <i class="fa fa-arrow-right"></i> P2P Trade
+                      </a>
+                  </li>
+              </ul>
+          </li>
+          
+          <li class="@photogalleryactive ">
+              <a href="/paymentmethod">
+                  <i class="fa fa-bank"></i> Payment Method
+              </a>
+          </li>
+
+                      <li class="navigation__sub navigation__sub--toggled "><a href="#"><i class="fa fa-history" aria-hidden="true"></i>CMS Settings <span class="pull-right"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-up"></i> </span></a>
+                <ul>
+                                      <li class="@colorsactive"><a href="/aboutus" class=""><i class="fa fa-arrow-right"></i> About Us </a></li> 
+                  
+                                      <li class="@colorsactive"><a href="/privacy" class=""><i class="fa fa-arrow-right"></i> Privacy Policy </a></li>
+                  
+                                      <li class="@colorsactive"><a href="/terms" class=""><i class="fa fa-arrow-right"></i> Terms & Conditions </a></li>
+                  
+                  
+                            <li class="@colorsactive">
+                                        <a href="/blogs" class="">
+                                            <i class="fa fa-arrow-right"></i> Blogs
+                                        </a>
+                                 </li>
+                       
+
+                                      <li class="@colorsactive"><a href="/features" class=""><i class="fa fa-arrow-right"></i> Features </a></li>
+                  
+                                       <li class="@colorsactive"><a href="/followus" class=""><i class="fa fa-arrow-right"></i> Follow Us </a></li>
+                  
+                                      <li class="@colorsactive"><a href="/howwork" class=""><i class="fa fa-arrow-right"></i> How It Works</a></li>
+                  
+                                      <li class="@colorsactive"><a href="/faq" class=""><i class="fa fa-arrow-right"></i> FAQ </a></li>
+                                                      
+                    <li class="@colorsactive"><a href="/newsletter" class=""><i class="fa fa-arrow-right"></i> Newsletter</a></li>
+                     
+                       <li class="@colorsactive"><a href="/whitepaper" class=""> <i class="fa fa-arrow-right"></i>White Paper </a></li>
+                 
+                </ul>
+            </li>
+          
+                      <li class="@photogalleryactive "><a href="/security"><i class="zmdi zmdi-settings" aria-hidden="true"></i>Security Settings </a></li>
+          
+           <li class="@photogalleryactive "><a href="/subscribers"><i class="fa fa-rocket" aria-hidden="true"></i>Subscribers </a></li>
+
+          <li class="@photogalleryactive">
+            <a href="/logout">
+              <i class="zmdi zmdi-power-off"></i>  Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    </style>
+<section class="content">
+	<header class="content__title">
+		<h1>Dispute Trade</h1>
+	</header>
+	<div class="card">
+		<div class="card-body">
+			<form action="/disputeSearch" method="post" autocomplete="off">
+				<input type="hidden" name="_token" value="zYMNeDn9zSb2zRkGTDrFelV7OJ45vUPlXFknOjOr">
+				<div class="row searchnrow">
+					<div class="col-md-3">
+						<select class="form-control" name="trade_pair">
+							<option value="">Select Coin / Token</option>
+																					<option value="1" >BTC </option>
+														<option value="2" >ETH </option>
+														<option value="3" >DOGE </option>
+														<option value="4" >BNB </option>
+														<option value="5" >SOL </option>
+														<option value="6" >ADA </option>
+														<option value="7" >XRP </option>
+														<option value="8" >XLM </option>
+														<option value="9" >USDT (ERC20)</option>
+														<option value="10" >DOT </option>
+														<option value="11" >ZAR </option>
+														<option value="12" >USD </option>
+														<option value="13" >DAI (ERC20)</option>
+														<option value="14" >HEX (ERC20)</option>
+														<option value="15" >USDC (ERC20)</option>
+														<option value="16" >SHIB (ERC20)</option>
+														<option value="17" >LUNA (ERC20)</option>
+														<option value="18" >USDT (ERC20)</option>
+														<option value="19" >UST (ERC20)</option>
+														<option value="20" >WBTC (ERC20)</option>
+														<option value="21" >MATIC (ERC20)</option>
+														<option value="22" >UNI (ERC20)</option>
+														<option value="23" >MANA (ERC20)</option>
+														<option value="24" >LINK (ERC20)</option>
+														<option value="25" >ATOM (ERC20)</option>
+														<option value="26" >APE (ERC20)</option>
+														<option value="27" >AXS (ERC20)</option>
+														<option value="28" >QNT (ERC20)</option>
+														<option value="29" >AAVE (ERC20)</option>
+														<option value="30" >SAND (ERC20)</option>
+														<option value="31" >WFLOW (ERC20)</option>
+														<option value="32" >LINK (BEP20)</option>
+														<option value="33" >EOS (BEP20)</option>
+														<option value="34" >FRAX (BEP20)</option>
+														<option value="35" >ATOM (BEP20)</option>
+														<option value="36" >LUNC (ERC20)</option>
+														<option value="37" >GBP </option>
+														<option value="40" >LBR (ERC20)</option>
+														<option value="43" >XRP (BEP20)</option>
+														<option value="44" >MATIC (BEP20)</option>
+														<option value="45" >LEO (ERC20)</option>
+														<option value="46" >VET (BEP20)</option>
+														<option value="47" >USDT (BEP20)</option>
+														<option value="48" >ETH (BEP20)</option>
+														<option value="49" >STR (BEP20)</option>
+													</select>
+					</div>
+					<div class="col-md-3">
+						<select class="form-control" name="trade_type">
+							<option value="3" >All Status</option>
+							<option value="0" >Pending</option>
+							<option value="1" >Completed</option>
+						</select>
+					</div>
+					<div class="col-md-3">
+						<input type="text" name="searchitem" class="form-control" placeholder="Search for Username" value= "">
+					</div>
+					<div class="col-md-3">
+						<select class="form-control" name="market">
+							<option value="">All Currency</option>
+														                              	<option value="1" >AFN</option>
+                                                          	<option value="3" >ALL</option>
+                                                          	<option value="4" >DZD</option>
+                                                          	<option value="212" >EUR</option>
+                                                          	<option value="7" >AOA</option>
+                                                          	<option value="190" >XCD</option>
+                                                          	<option value="11" >ARS</option>
+                                                          	<option value="12" >AMD</option>
+                                                          	<option value="13" >AWG</option>
+                                                          	<option value="234" >AUD</option>
+                                                          	<option value="16" >AZN</option>
+                                                          	<option value="18" >BHD</option>
+                                                          	<option value="19" >BDT</option>
+                                                          	<option value="20" >BBD</option>
+                                                          	<option value="21" >BYR</option>
+                                                          	<option value="23" >BZD</option>
+                                                          	<option value="226" >XOF</option>
+                                                          	<option value="25" >BMD</option>
+                                                          	<option value="26" >BTN</option>
+                                                          	<option value="252" >BWP</option>
+                                                          	<option value="32" >BRL</option>
+                                                          	<option value="35" >BGN</option>
+                                                          	<option value="37" >BIF</option>
+                                                          	<option value="38" >KHR</option>
+                                                          	<option value="80" >XAF</option>
+                                                          	<option value="40" >CAD</option>
+                                                          	<option value="41" >CVE</option>
+                                                          	<option value="42" >KYD</option>
+                                                          	<option value="45" >CLP</option>
+                                                          	<option value="46" >CNY</option>
+                                                          	<option value="49" >COP</option>
+                                                          	<option value="50" >KMF</option>
+                                                          	<option value="165" >NZD</option>
+                                                          	<option value="54" >CRC</option>
+                                                          	<option value="56" >HRK</option>
+                                                          	<option value="57" >CUC</option>
+                                                          	<option value="60" >CZK</option>
+                                                          	<option value="73" >DKK</option>
+                                                          	<option value="62" >DJF</option>
+                                                          	<option value="64" >DOP</option>
+                                                          	<option value="239" >USD</option>
+                                                          	<option value="66" >EGP</option>
+                                                          	<option value="69" >ERN</option>
+                                                          	<option value="71" >ETB</option>
+                                                          	<option value="74" >FJD</option>
+                                                          	<option value="248" >XPF</option>
+                                                          	<option value="82" >GEL</option>
+                                                          	<option value="84" >GHS</option>
+                                                          	<option value="85" >GIP</option>
+                                                          	<option value="91" >GTQ</option>
+                                                          	<option value="238" >GBP</option>
+                                                          	<option value="93" >GNF</option>
+                                                          	<option value="95" >GYD</option>
+                                                          	<option value="96" >HTG</option>
+                                                          	<option value="99" >HNL</option>
+                                                          	<option value="100" >HKD</option>
+                                                          	<option value="101" >HUF</option>
+                                                          	<option value="102" >ISK</option>
+                                                          	<option value="103" >INR</option>
+                                                          	<option value="104" >IDR</option>
+                                                          	<option value="105" >IRR</option>
+                                                          	<option value="106" >IQD</option>
+                                                          	<option value="109" >ILS</option>
+                                                          	<option value="111" >JMD</option>
+                                                          	<option value="112" >JPY</option>
+                                                          	<option value="114" >JOD</option>
+                                                          	<option value="115" >KZT</option>
+                                                          	<option value="116" >KES</option>
+                                                          	<option value="121" >KWD</option>
+                                                          	<option value="122" >KGS</option>
+                                                          	<option value="123" >LAK</option>
+                                                          	<option value="125" >LBP</option>
+                                                          	<option value="126" >LSL</option>
+                                                          	<option value="127" >LRD</option>
+                                                          	<option value="219" >CHF</option>
+                                                          	<option value="134" >MGA</option>
+                                                          	<option value="135" >MWK</option>
+                                                          	<option value="136" >MYR</option>
+                                                          	<option value="137" >MVR</option>
+                                                          	<option value="142" >MRO</option>
+                                                          	<option value="143" >MUR</option>
+                                                          	<option value="145" >MXN</option>
+                                                          	<option value="147" >MDL</option>
+                                                          	<option value="149" >MNT</option>
+                                                          	<option value="152" >MAD</option>
+                                                          	<option value="153" >MZN</option>
+                                                          	<option value="154" >MMK</option>
+                                                          	<option value="155" >NAD</option>
+                                                          	<option value="157" >NPR</option>
+                                                          	<option value="162" >NIO</option>
+                                                          	<option value="164" >NGN</option>
+                                                          	<option value="168" >NOK</option>
+                                                          	<option value="169" >OMR</option>
+                                                          	<option value="170" >PKR</option>
+                                                          	<option value="173" >PAB</option>
+                                                          	<option value="174" >PGK</option>
+                                                          	<option value="175" >PYG</option>
+                                                          	<option value="176" >PEN</option>
+                                                          	<option value="177" >PHP</option>
+                                                          	<option value="179" >PLN</option>
+                                                          	<option value="182" >QAR</option>
+                                                          	<option value="184" >RON</option>
+                                                          	<option value="185" >RUB</option>
+                                                          	<option value="186" >RWF</option>
+                                                          	<option value="194" >WST</option>
+                                                          	<option value="197" >SAR</option>
+                                                          	<option value="199" >RSD</option>
+                                                          	<option value="201" >SCR</option>
+                                                          	<option value="202" >SLL</option>
+                                                          	<option value="203" >BND</option>
+                                                          	<option value="207" >SBD</option>
+                                                          	<option value="208" >SOS</option>
+                                                          	<option value="209" >ZAR</option>
+                                                          	<option value="213" >LKR</option>
+                                                          	<option value="214" >SDG</option>
+                                                          	<option value="215" >SRD</option>
+                                                          	<option value="217" >SZL</option>
+                                                          	<option value="218" >SEK</option>
+                                                          	<option value="221" >TWD</option>
+                                                          	<option value="222" >TJS</option>
+                                                          	<option value="224" >THB</option>
+                                                          	<option value="228" >TOP</option>
+                                                          	<option value="229" >TTD</option>
+                                                          	<option value="230" >TND</option>
+                                                          	<option value="231" >TRY</option>
+                                                          	<option value="232" >TMT</option>
+                                                          	<option value="235" >UGX</option>
+                                                          	<option value="236" >UAH</option>
+                                                          	<option value="237" >AED</option>
+                                                          	<option value="241" >UYU</option>
+                                                          	<option value="242" >UZS</option>
+                                                          	<option value="243" >VUV</option>
+                                                          	<option value="245" >VND</option>
+                                                          	<option value="250" >YER</option>
+                                                          	<option value="251" >ZMW</option>
+                            						</select>
+					</div>
+				</div>
+				<br /><br />
+				<div class="row searchnrow">
+					<div class="col-md-3">
+						<input type="text" name="statdate" class="form-control date-picker" id="datepicker" value="" placeholder="Start Date" />
+					</div>
+					<div class="col-md-3">
+						<input type="text" name="enddate" class="form-control date-picker" id="datepicker2" value="" placeholder="End Date" />
+					</div>
+					<div class="col-md-3">
+						<button type="submit" class="btn btn-success user_date"><i class="fa fa-search"></i> Search</button>
+						<a class="btn btn-warning btn-xs" href="/disputeTrade"> <i class="fa fa-refresh"></i> Clear </a>
+					</div>
+				</div>
+			</form>
+			<br/>
+			<br/>
+									<div class="table-responsive search_result">
+				<table class="table" id="dows">
+					<thead>
+						<tr>
+							<th>Date & Time</th>
+							<th>Coin / Token</th>
+							<th>Dispute By</th>
+							<th>Dispute Against</th>
+							<th>Message</th>
+							<th>Status</th>
+							<th>Action</th>
+						</tr>
+					</thead>
+					<tbody>
+																																										<tr>
+							<td>2023-09-12 12:32</td>
+							<td>DOGE</td>
+							<td><a href="#">liam <a href="/disputeUserMessage/eyJpdiI6InAwXC9WeW04am9RVkdzT25qdVFoMVJ3PT0iLCJ2YWx1ZSI6ImNGRnpuS0h3eFwvc0kzdVdFZ090SExBPT0iLCJtYWMiOiIxNjNiNWE2YzVkMjJkMjI1NzUxZjU2ODc5ZTBkYWE0MTBiNzNlMDU0NDAxMmU1NTE3ZWMwN2JjN2ZmN2I2Y2FhIn0=/eyJpdiI6IjFKYmJMZVZFckw2SytTb2Q0bTFXamc9PSIsInZhbHVlIjoiUVN3MlFuZ05BWEZkanE4cm5GeHozdz09IiwibWFjIjoiM2IxNTYwZDg5YzFlOWFiMjYxYjhkM2JiNmJmMzRkZDY2MDMyMDgzNjVmNDk5ZjU5ZTI4NmQ0NjM4NzE4MTA5MyJ9"><i class="fa fa-comments"></i></a></a></td>
+							<td><a href="#">pablo <a href="/disputeUserMessage/eyJpdiI6IkZDZlRlZXRQNGZ5Z1J5cFgzVXBOWlE9PSIsInZhbHVlIjoiR3VmQ051RU03TjBlUEorOUpSaGtHUT09IiwibWFjIjoiODFhMGI3NTZjY2Q0ODY5NWNmNDk1MjliMzdjMzA3OTRjYjE2ZDRjMTMzZDQ3MDA2ZDRhZWYzZDM3YzFjNGZiNiJ9/eyJpdiI6ImRQNGYxb2RKMEdvdVFvTjVrbkM3M0E9PSIsInZhbHVlIjoid1NEbTkzOEUxcTdwZXJLZG5PdW9Qdz09IiwibWFjIjoiZjVhZTM0OTZkNGEyMGQ3MjE5ZDQyNDZkOTZiZGY5OTM3MTY5NjU4N2RhNzZiODczYzVhMzA3MTcwYjIzYjMxYSJ9"><i class="fa fa-comments"></i></a></a></td>
+							<td>Yes</td>
+							<td>
+																Pending
+															</td>
+							<td>
+															    	<a class="btn btn-success btn-xs" href="/disputeMessage/eyJpdiI6IklRYzNGSHJlRWNxQ3VibVwvam5iRkRBPT0iLCJ2YWx1ZSI6IjJKUWpxZ3g5aWYySmJJS2llVDRLV2c9PSIsIm1hYyI6IjU2ZWU1MmQ0MzYyYmU4ODMyMmNiNzA5NWY4Y2Y2NzlmYWUzOTg3ZWNhYjgwNGVkZWQ0Zjc4MTYxZDcwNWJkNDYifQ=="><i class="fa fa-pencil-square-o"></i> View </a>
+							    							</td>
+																																					<tr>
+							<td>2023-09-11 10:30</td>
+							<td>ETH</td>
+							<td><a href="#">liam <a href="/disputeUserMessage/eyJpdiI6IjJseTVIYU5qalRWUzE3STBKaGk5eGc9PSIsInZhbHVlIjoiVlZxMllSelJjVmRndGJaWE5mcnZBZz09IiwibWFjIjoiN2NiMmVhOWYxYTcwYjk0MWQ4YmZlYWU3ZWE3ZjBhYjMyYzM4MTNiMzM1YzdkODVlOTMwOTkwY2IwOWJjNGEyMCJ9/eyJpdiI6Ik9hQVlxMUF1cnJrNk1WNzZoVjk4ZFE9PSIsInZhbHVlIjoiQlN0aVdXaWhLelZwMEtSU3VzODJVUT09IiwibWFjIjoiYzk1OTNmMGQ5NDZmZGQzYTI1YjIzN2Q2NjhkNjhiNDEyZDUxMWU2N2ZiNGUwNmU4YTY4NGNjNWQzM2M0MTQ1ZSJ9"><i class="fa fa-comments"></i></a></a></td>
+							<td><a href="#">pablo <a href="/disputeUserMessage/eyJpdiI6InJFM0pNdElUUE9nOUlVbVQrTDArRkE9PSIsInZhbHVlIjoiVW5BZTlTa0QyajVrdkNVdVptUnBIdz09IiwibWFjIjoiNmM4MTFkNmJmYmNkZDk3YTMxZjQyNGU4MzY1Nzg2N2EwNzVlNTY5NDI1NTg5Y2UyZmY2NmI3MDA5YTIzOGIwNSJ9/eyJpdiI6IkltOFVmcGRDeTlkSHZaeUVvemNOV3c9PSIsInZhbHVlIjoiNmljdHVJSTJjaCtiNFwvOXh6aDlLclE9PSIsIm1hYyI6ImE3MDkyYzlhYWYyOTEyMWIyOGQwZWNhZjVjNmUyYmI4ZWZmOGY0YjA0Y2NkZjAyMGU2MDk1ODE3M2E4YWQyMTEifQ=="><i class="fa fa-comments"></i></a></a></td>
+							<td>I didn&#039;t receive money from buyer.</td>
+							<td>
+																Completed
+															</td>
+							<td>
+															    	<a class="btn btn-success btn-xs" href="/disputeMessage/eyJpdiI6IlQyTUhKZlJ0a3Rub0dLOFd6ZzhvXC9nPT0iLCJ2YWx1ZSI6IlpDUlRaZ2FFcXlueDVWZnpIUWtYbmc9PSIsIm1hYyI6ImQyZWM2NTk1ODc2YzZiMjIwMzBjYjBkN2ZiYzM4ZWI2NTNhODRlYTEwNGE2MTRmMzQwNmQ2MTM0ZmNkODIxZWIifQ=="><i class="fa fa-pencil-square-o"></i> View </a>
+							    							</td>
+																																					<tr>
+							<td>2023-09-08 10:08</td>
+							<td>BTC</td>
+							<td><a href="#">liam <a href="/disputeUserMessage/eyJpdiI6ImRGVzJmWmxhR3lXXC9QMzB2dmJOajJRPT0iLCJ2YWx1ZSI6IkV6WEk1dmpuQm9aK0NKUk90aHlcL2F3PT0iLCJtYWMiOiIyMDZlZmNiYjM2OGM5ODFiYWZmNWJhYmQxNzkzOTdmMDJjMTc0MDMwY2Q1ODQ0M2JmYzk5OGY5MDc1MzgzMjA0In0=/eyJpdiI6IldLZXpaV0g5MW92eU9SWCthOWdabUE9PSIsInZhbHVlIjoiaXUwTStvdUFcL2NTOW81Q2ZcL1hsNE53PT0iLCJtYWMiOiI2ODE1ZmRiZjg2NGFmNmYzMjJmOThkZTUyY2ZiMjY3ZGNkNGQ1OGQ1Yzk0NjkwYTBmMWQ3OTBjZTkzM2FiZTlhIn0="><i class="fa fa-comments"></i></a></a></td>
+							<td><a href="#">pablo <a href="/disputeUserMessage/eyJpdiI6IlVVREJGeDdyaHh3djlXSFRScmpxYVE9PSIsInZhbHVlIjoid2NuOXRQV0hoNll1YmtPcGMrblpydz09IiwibWFjIjoiNjVjMTIwOTJjNjI1OWM5NDNiYjQyNDYxYjg4ZDgzNGIyYjJmMjRiNmUzMzA3OGE5OTZhNjc4ZTNlOWE4YjE1NSJ9/eyJpdiI6IlFCMFlEdzdIRk4yaUxjakh5bFpLZGc9PSIsInZhbHVlIjoibTFYWnNJS2VUdVl6amNlWDFqUnFhdz09IiwibWFjIjoiZDUyZWNmOTliYzgzNTlkMTRiOGQ0Mzg2MWUzZmJkNGIyNTYwNzM0MjFkMDdiOGJjODI0YzFhM2JjMjU4MmMwZCJ9"><i class="fa fa-comments"></i></a></a></td>
+							<td>Yes</td>
+							<td>
+																Completed
+															</td>
+							<td>
+															    	<a class="btn btn-success btn-xs" href="/disputeMessage/eyJpdiI6InZ6XC83c3M1NTB4VGVzNFErNkVoenJBPT0iLCJ2YWx1ZSI6IlZ5WDF3a0xFVWFiY0JuMWJOVkh6UVE9PSIsIm1hYyI6IjgyM2NlNGQ3MjcwNmY4NDUxNzdlYWVlMzBkNTBjM2ZlM2ExNzU2ZWIwMGQyYmYyMzIyYzViYzFkNzgzOWUxYzcifQ=="><i class="fa fa-pencil-square-o"></i> View </a>
+							    							</td>
+																				</tbody>
+					</table>
+					<div class="col-md-12 col-sm-12 col-xs-12 nopadding">
+						<div class="pagination-tt clearfix">
+														
+													</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	  </style>
+  <footer class="footer hidden-xs-down">
+    <p>Copyright © 2023 Starbuy. All Rights Reserved.</p>
+  </footer>
+</section>
+</main>
+<script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+<script src="/vendors/bower_components/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+<script src="/vendors/bower_components/flatpickr/dist/flatpickr.min.js"></script>
+<script src="/vendors/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="/vendors/bower_components/jszip/dist/jszip.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="/js/app.min.js"></script>
+<script src="/ckeditor/ckeditor.js"></script>
+<script src="/js/validation.js?v=729"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+
+  $(document).ready(function() {
+    var activeSystemClass = $('.list-group-item.active');
+    $('#system-search').keyup( function() {
+      var that = this;
+      var tableBody = $('.table-list-search tbody');
+      var tableRowsClass = $('.table-list-search tbody tr .coinnamesearch');
+      $('.search-sf').remove();
+      if(tableRowsClass.children(':visible').length == 0 && $('#system-search').val() != '')
+      {
+        tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">No coin found.</td></tr>');
+      }
+      tableRowsClass.each( function(i, val) {
+        var rowText = $(val).text().toLowerCase();
+        var inputText = $(that).val().toLowerCase();
+        if(inputText != '')
+        {
+          $('.search-query-sf').remove();
+        }
+        else
+        {
+          $('.search-query-sf').remove();
+        }
+        if( rowText.indexOf( inputText ) == -1 )
+        {
+          tableRowsClass.eq(i).parent().hide();
+        }
+        else
+        {
+          $('.search-sf').remove();
+          tableRowsClass.eq(i).parent().show();
+        }
+      });
+    });
+  });
+
+  function mySearchFunction(get_id, get_id1) {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById(get_id1);
+    filter = input.value.toUpperCase();
+    ul = document.getElementById(get_id);
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+</script>
+<script src="/js/chosen.jquery.min.js"></script>
+<script type="text/javascript">
+  $(".chosen").chosen();
+</script>
+</body>
+</html>

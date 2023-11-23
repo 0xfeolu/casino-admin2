@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="zYMNeDn9zSb2zRkGTDrFelV7OJ45vUPlXFknOjOr">
+        <title>Admin Panel | Starbuy</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+        <link rel="stylesheet" href="/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="/vendors/bower_components/animate.css/animate.min.css">
+        <link rel="stylesheet" href="/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.css">
+        <link rel="stylesheet" href="/vendors/bower_components/fullcalendar/dist/fullcalendar.min.css">
+        <link rel="stylesheet" href="/vendors/bower_components/flatpickr/dist/flatpickr.min.css"/>
+        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/chosen.min.css">
+        <link rel="stylesheet" href="/css/app.min.css?v=58">
+        <link rel="stylesheet" href="/css/pagination.css">
+    </head>
+    <body data-sa-theme="7">
+        <main class="main">
+            <header class="header">
+                <div class="navigation-trigger hidden-xl-up" data-sa-action="aside-open" data-sa-target=".sidebar">
+                    <i class="zmdi zmdi-menu"></i>
+                </div>
+                <div class="logo hidden-sm-down">
+                    <h1>
+                        <a href="#">
+                            <img src="/images/logo.png" class="logo-text-1"/>
+                        </a>
+                    </h1>
+                </div>
+            </header>
+            <aside class="sidebar">
+                <div class="scrollbar-inner">
+                    <div class="user">
+                        <div class="user__info" data-toggle="dropdown">
+                            <div>
+                                <div class="user__name">Admin Panel</div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="navigation">
+                        <li class="@photogalleryactive ">
+                            <a href="/adminDashboard">
+                                <i class="zmdi zmdi-view-dashboard"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="@photogalleryactive navigation__active">
+                            <a href="/users">
+                                <i class="fa fa-users"></i>
+                                Users Details
+                            </a>
+                        </li>
+                        <li class="@photogalleryactive ">
+                            <a href="/usersBalance">
+                                <i class="zmdi zmdi-balance-wallet"></i>
+                                Users Balance
+                            </a>
+                        </li>
+                        <li class="@photogalleryactive ">
+                            <a href="/kycData">
+                                <i class="zmdi zmdi-badge-check"></i>
+                                KYC Submission (7)
+                            </a>
+                        </li>
+                        <li class="@photogalleryactive ">
+                            <a href="/tradeWallet">
+                                <i class="fa fa-bank"></i>
+                                Income & Expense Details
+                            </a>
+                        </li>
+                        <li class="navigation__sub navigation__sub--toggled ">
+                            <a href="#">
+                                <i class="fa fa-arrow-down"></i>
+                                Deposit History (3)
+                            </a>
+                            <ul>
+                                <div class="sublistsearcbbg">
+                                    <div class="searchcoinbg">
+                                        <input type="text" class="form-control" id="myInput" onkeyup="mySearchFunction('myUL', 'myInput')" placeholder="Search coin name..." autocomplete="off">
+                                    </div>
+                                    <div id="myUL">
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/BTC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                BTC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/ETH" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ETH 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/DOGE" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                DOGE 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/BNB" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                BNB 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/SOL" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                SOL 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/ADA" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ADA 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/XRP" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                XRP 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/XLM" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                XLM 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/USDT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/DOT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                DOT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/ZAR" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ZAR  (3) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/USD" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USD  (3) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/DAI" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                DAI 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/HEX" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                HEX 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/USDC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/SHIB" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                SHIB 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/LUNA" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LUNA 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/USDT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/UST" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                UST 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/WBTC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                WBTC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/MATIC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                MATIC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/UNI" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                UNI 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/MANA" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                MANA 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/LINK" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LINK 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/ATOM" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ATOM 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/APE" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                APE 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/AXS" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                AXS 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/QNT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                QNT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/AAVE" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                AAVE 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/SAND" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                SAND 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/WFLOW" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                WFLOW 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/LINK" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LINK 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/EOS" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                EOS 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/FRAX" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                FRAX 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/ATOM" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ATOM 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/LUNC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LUNC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/GBP" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                GBP  (3) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/LBR" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LBR 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/XRP" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                XRP 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/MATIC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                MATIC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/LEO" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LEO 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/VET" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                VET 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/USDT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/ETH" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ETH 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/deposit/STR" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                STR 
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub navigation__sub--toggled ">
+                            <a href="#">
+                                <i class="fa fa-arrow-up"></i>
+                                External Withdraw History (11) 
+                            </a>
+                            <ul>
+                                <div class="sublistsearcbbg">
+                                    <div class="searchcoinbg"></div>
+                                    <div id="myUL1">
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/BTC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                BTC  (3) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/ETH" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ETH  (1) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/DOGE" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                DOGE 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/BNB" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                BNB  (1) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/SOL" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                SOL  (1) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/ADA" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ADA 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/XRP" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                XRP 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/XLM" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                XLM 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/USDT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/DOT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                DOT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/ZAR" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ZAR 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/USD" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USD 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/DAI" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                DAI 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/HEX" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                HEX 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/USDC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/SHIB" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                SHIB 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/LUNA" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LUNA 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/USDT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/UST" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                UST 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/WBTC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                WBTC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/MATIC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                MATIC  (1) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/UNI" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                UNI 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/MANA" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                MANA 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/LINK" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LINK 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/ATOM" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ATOM 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/APE" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                APE 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/AXS" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                AXS 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/QNT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                QNT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/AAVE" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                AAVE 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/SAND" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                SAND 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/WFLOW" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                WFLOW 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/LINK" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LINK 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/EOS" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                EOS 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/FRAX" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                FRAX 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/ATOM" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ATOM 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/LUNC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LUNC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/GBP" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                GBP 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/LBR" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LBR  (1) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/XRP" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                XRP 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/MATIC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                MATIC  (1) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/LEO" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LEO  (1) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/VET" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                VET  (1) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/USDT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/ETH" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ETH  (1) 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/withdraw/STR" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                STR 
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub navigation__sub--toggled ">
+                            <a href="#">
+                                <i class="fa fa-exchange"></i>
+                                Internal Withdraw History 
+                            </a>
+                            <ul>
+                                <div class="sublistsearcbbg">
+                                    <div class="searchcoinbg"></div>
+                                    <div id="myUL1">
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/BTC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                BTC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/ETH" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ETH 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/DOGE" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                DOGE 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/BNB" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                BNB 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/SOL" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                SOL 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/ADA" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ADA 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/XRP" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                XRP 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/XLM" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                XLM 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/USDT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/DOT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                DOT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/ZAR" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ZAR 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/USD" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USD 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/DAI" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                DAI 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/HEX" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                HEX 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/USDC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/SHIB" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                SHIB 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/LUNA" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LUNA 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/USDT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/UST" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                UST 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/WBTC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                WBTC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/MATIC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                MATIC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/UNI" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                UNI 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/MANA" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                MANA 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/LINK" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LINK 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/ATOM" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ATOM 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/APE" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                APE 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/AXS" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                AXS 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/QNT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                QNT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/AAVE" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                AAVE 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/SAND" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                SAND 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/WFLOW" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                WFLOW 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/LINK" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LINK 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/EOS" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                EOS 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/FRAX" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                FRAX 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/ATOM" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ATOM 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/LUNC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LUNC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/GBP" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                GBP 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/LBR" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LBR 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/XRP" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                XRP 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/MATIC" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                MATIC 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/LEO" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                LEO 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/VET" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                VET 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/USDT" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                USDT 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/ETH" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                ETH 
+                                            </a>
+                                        </li>
+                                        <li class="@colorsactive">
+                                            <a href="/internalWithdraw/STR" class="">
+                                                <i class="fa fa-arrow-right"></i>
+                                                STR 
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub navigation__sub--toggled ">
+                            <a href="#">
+                                <i class="fa fa-dollar" aria-hidden="true"></i>
+                                Orderbook History 
+                                <span class="pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul>
+                                <li class="@photogalleryactive ">
+                                    <a href="/tradeHistory/BUY/BTC/USDT">
+                                        <i class="fa fa-shopping-cart"></i>
+                                        Buy Trade History
+                                    </a>
+                                </li>
+                                <li class="@photogalleryactive ">
+                                    <a href="/tradeHistory/SELL/BTC/USDT">
+                                        <i class="fa fa-shopping-bag"></i>
+                                        Sell trade History
+                                    </a>
+                                </li>
+                                <li class="@photogalleryactive ">
+                                    <a href="/openOrders/BTC/USDT">
+                                        <i class="fa fa-external-link"></i>
+                                        Open Orders History
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub navigation__sub--toggled ">
+                            <a href="#">
+                                <i class="fa fa-stack-exchange" aria-hidden="true"></i>
+                                P2P Advertisements 
+                                <span class="pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-chevron-up"></i>
+                                </span>
+                            </a>
+                            <ul>
+                                <li class="@colorsactive ">
+                                    <a href="/advertisement/Buy">
+                                        <i class="fa fa-arrow-right"></i>
+                                        Buy Advertisement
+                    
+                                    </a>
+                                </li>
+                                <li class="@colorsactive ">
+                                    <a href="/advertisement/Sell">
+                                        <i class="fa fa-arrow-right"></i>
+                                        Sell Advertisement
+                      
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__sub navigation__sub--toggled ">
+                            <a href="#">
+                                <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                P2P Trades
+                                <span class="pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-chevron-up"></i>
+                                </span>
+                            </a>
+                            <ul>
+                                <li class="@photogalleryactive ">
+                                    <a href="/pendingTrade">
+                                        <i class="fa fa-arrow-right"></i>
+                                        Pending Trade
+                                    </a>
+                                </li>
+                                <li class="@photogalleryactive ">
+                                    <a href="/completedTrade">
+                                        <i class="fa fa-arrow-right"></i>
+</i>Completed Trade</a></li>
+<li class="@photogalleryactive ">
+    <a href="/cancelTrade">
+        <i class="fa fa-arrow-right"></i>
+        Cancelled Trade
+    </a>
+</li>
+</ul></li>
+<li class="@photogalleryactive ">
+    <a href="/disputeTrade">
+        <i class="zmdi zmdi-alert-triangle"></i>
+        Dispute Trade <span class="pull-right">(2)</span>
+    </a>
+</li>
+<li class="@photogalleryactive ">
+    <a href="/support">
+        <i class="zmdi zmdi-ticket-star"></i>
+        Support Ticket <span class="pull-right">(0)</span>
+    </a>
+</li>
+<li class="navigation__sub navigation__sub--toggled ">
+    <a href="#">
+        <i class="zmdi zmdi-code-setting"></i>
+        Commission Settings 
+        <span class="pull-right">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-chevron-up"></i>
+        </span>
+    </a>
+    <ul>
+        <li class="@photogalleryactive ">
+            <a href="/depositSettings">
+                <i class="fa fa-arrow-right"></i>
+                Deposit Commission
+            </a>
+        </li>
+        <li class="@photogalleryactive ">
+            <a href="/withdrawcryptoSettings">
+                <i class="fa fa-arrow-right"></i>
+                Withdraw Commission
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/tradeCommissionSettings" class="">
+                <i class="fa fa-arrow-down"></i>
+                P2P Trade Commission
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="@photogalleryactive ">
+    <a href="/ercTokenSettings">
+        <i class="fa fa-plus-square"></i>
+        ERC Token Settings
+    </a>
+</li>
+<li class="@photogalleryactive ">
+    <a href="/bepTokenSettings">
+        <i class="fa fa-plus-square"></i>
+        BSC Token Settings
+    </a>
+</li>
+<li class="navigation__sub navigation__sub--toggled ">
+    <a href="#">
+        <i class="fa fa-bank"></i>
+        Company Bank Details
+              
+        <span class="pull-right">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-chevron-up"></i>
+        </span>
+    </a>
+    <ul>
+        <li class="@photogalleryactive ">
+            <a href="/adminBank/ZAR">
+                <i class="fa fa-arrow-right"></i>
+                ZAR
+            </a>
+        </li>
+        <li class="@photogalleryactive ">
+            <a href="/adminBank/USD">
+                <i class="fa fa-arrow-right"></i>
+                USD
+            </a>
+        </li>
+        <li class="@photogalleryactive ">
+            <a href="/adminBank/GBP">
+                <i class="fa fa-arrow-right"></i>
+                GBP
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="navigation__sub navigation__sub--toggled ">
+    <a href="#">
+        <i class="zmdi zmdi-assignment-o"></i>
+        Trade Settings 
+        <span class="pull-right">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-chevron-up"></i>
+        </span>
+    </a>
+    <ul>
+        <li class="@colorsactive">
+            <a href="/tradeSettings" class="">
+                <i class="fa fa-arrow-right"></i>
+                Pair Settings 
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="navigation__sub navigation__sub--toggled ">
+    <a href="#">
+        <i class="zmdi zmdi-card-giftcard" aria-hidden="true"></i>
+        Commission History
+                  
+        <span class="pull-right">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-chevron-up"></i>
+        </span>
+    </a>
+    <ul>
+        <li class="@colorsactive">
+            <a href="/trade-commission" class="">
+                <i class="fa fa-arrow-right"></i>
+                P2P Trade
+                      
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="@photogalleryactive ">
+    <a href="/paymentmethod">
+        <i class="fa fa-bank"></i>
+        Payment Method
+              
+    </a>
+</li>
+<li class="navigation__sub navigation__sub--toggled ">
+    <a href="#">
+        <i class="fa fa-history" aria-hidden="true"></i>
+        CMS Settings 
+        <span class="pull-right">
+            <i class="fa fa-chevron-down"></i>
+            <i class="fa fa-chevron-up"></i>
+        </span>
+    </a>
+    <ul>
+        <li class="@colorsactive">
+            <a href="/aboutus" class="">
+                <i class="fa fa-arrow-right"></i>
+                About Us 
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/privacy" class="">
+                <i class="fa fa-arrow-right"></i>
+                Privacy Policy 
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/terms" class="">
+                <i class="fa fa-arrow-right"></i>
+                Terms & Conditions 
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/blogs" class="">
+                <i class="fa fa-arrow-right"></i>
+                Blogs
+                                        
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/features" class="">
+                <i class="fa fa-arrow-right"></i>
+                Features 
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/followus" class="">
+                <i class="fa fa-arrow-right"></i>
+                Follow Us 
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/howwork" class="">
+                <i class="fa fa-arrow-right"></i>
+                How It Works
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/faq" class="">
+                <i class="fa fa-arrow-right"></i>
+                FAQ 
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/newsletter" class="">
+                <i class="fa fa-arrow-right"></i>
+                Newsletter
+            </a>
+        </li>
+        <li class="@colorsactive">
+            <a href="/whitepaper" class="">
+                <i class="fa fa-arrow-right"></i>
+                White Paper 
+            </a>
+        </li>
+    </ul>
+</li>
+<li class="@photogalleryactive ">
+    <a href="/security">
+        <i class="zmdi zmdi-settings" aria-hidden="true"></i>
+        Security Settings 
+    </a>
+</li>
+<li class="@photogalleryactive ">
+    <a href="/subscribers">
+        <i class="fa fa-rocket" aria-hidden="true"></i>
+        Subscribers 
+    </a>
+</li>
+<li class="@photogalleryactive">
+    <a href="/logout">
+        <i class="zmdi zmdi-power-off"></i>
+        Logout
+            
+    </a>
+</li>
+</ul></div></aside></style>
+<section class="content">
+    <header class="content__title">
+        <h1>Users</h1>
+    </header>
+    <div class="card">
+        <div class="card-body">
+            <form action="/userssearch" method="post" autocomplete="off">
+                <input type="hidden" name="_token" value="zYMNeDn9zSb2zRkGTDrFelV7OJ45vUPlXFknOjOr">
+                <div class="row searchnrow">
+                    <div class="col-md-4">
+                        <input type="text" name="searchitem" class="form-control" placeholder="Search for Username / Email ID" value="">
+                    </div>
+                    <div class="col-md-3">
+                        <input type="text" name="statdate" class="form-control date-picker" id="datepicker" value="" placeholder="Start Date"/>
+                    </div>
+                    <div class="col-md-2">
+                        <input type="text" name="enddate" class="form-control date-picker" id="datepicker2" value="" placeholder="End Date"/>
+                    </div>
+                    <div class="col-md-3">
+                        <button type="submit" class="btn btn-success user_date">
+                            <i class="fa fa-search"></i>
+                            Search
+                        </button>
+                        <a class="btn btn-warning btn-xs" href="/users">
+                            <i class="fa fa-refresh"></i>
+                            Clear 
+                        </a>
+                    </div>
+                </div>
+            </form>
+            <br/>
+            <br/>
+            <h5>
+                Total Users : 29 | <span>Email Verified Users : 22</span>
+                | <span>2FA Verified Users : 12 </span>
+                | <span>KYC Verified Users : 12</span>
+            </h5>
+            <hr/>
+            <div class="table-responsive search_result">
+                <table class="table" id="dows">
+                    <thead>
+                        <tr>
+                            <th>Joining Date & Time</th>
+                            <th>Username</th>
+                            <th>Email ID</th>
+                            <th>Email Verify</th>
+                            <th colspan="3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06/11/2023 23:50:11</td>
+                            <td>sean</td>
+                            <td>seanplexy@gmail.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6IlFVMUhJS0xYRTcxTWt4T0h4M1dlSFE9PSIsInZhbHVlIjoianJsQVBDNlYyVmpzeWxnMUxcLzNMdGc9PSIsIm1hYyI6IjNjZjliNWM1YWMxYTA3MjhkZmIyYzkzNTY5M2MwNTczNDcyNGI3YmM3NzNlZTRkMTZmNGVlMGFmMDI3NmFiZTUifQ==" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6IjRcL1p4NHBLMW85UVRQVStrN2F2Y2d3PT0iLCJ2YWx1ZSI6Ind1OEhGb3dvUkhqYitIU3lDOUVBUGc9PSIsIm1hYyI6IjI3Y2FhYjA3ZTgyOTY5MTRjMTEzYzU5ZWYyNzljZTIwNjJjMDRhNjJlM2FmYzJkNTMwZWZkYWM4ODY0ZmRjYjgifQ==" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6IjVMbXVwV0lxbk1ZTFRcL053Umx5OGp3PT0iLCJ2YWx1ZSI6IndrRkhQRHA0Tnh0Q0E1NmVqMTE1T0E9PSIsIm1hYyI6IjM4MjAzOWQyZGZiZTVhNTgxYWQyYjY5NTk2M2U1ZDQ0M2JhMzY0YTljNTNiYTE2Y2I1NTMxYWQzN2EwYzRlNmEifQ==">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31/10/2023 06:43:42</td>
+                            <td>Astro</td>
+                            <td>astro@mailinator.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6InI5ZnVScjZ0XC9XeXVmSHl3XC9QQVRQQT09IiwidmFsdWUiOiJNK2kzOUVISEwwYmhLTFNZWFdKQWNnPT0iLCJtYWMiOiIzNDFjZTNhYmU3MWU3Y2Y5ZmI1ZWZkYTlhMzFjNWM2ZmFlZjkzNmMyMWVmNjNjM2RmYjM2ODg2MjIwNTMwNTI1In0=" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6IitucE1tc0RrT0w0M0xLclRzdlRRT0E9PSIsInZhbHVlIjoiaXdcL2UxZStFXC9WbXlMemhKUVNHbktRPT0iLCJtYWMiOiI5NjIwMzFlODJjZDJkYTg5ZDgzYjk3MTViOWMyZTAzYTk0MjAyN2EyYWVjMDgxOTk1NmYwNzI3OTM2YjNkYTU3In0=" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6IkQ4bFJ0N1cxRFcybFhLREV5XC9US2NnPT0iLCJ2YWx1ZSI6IkU2WnM5eXgyYnlERTFrN2U0cEEyNXc9PSIsIm1hYyI6IjExMDYwYWFkNmJlOTI3MjI4YzdiZDQ5N2E4YzNhM2JiZTg4NDIyODRhNTRkYzA3ZjVlYTU3YzY0ZmRkNWY2ZWEifQ==">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>30/10/2023 19:29:20</td>
+                            <td>vijaycool</td>
+                            <td>tmp.irritate133@slmails.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6InVcL2MxSStpVW9NVG8yMU5rWW1Ed1dnPT0iLCJ2YWx1ZSI6IjgwVm9jbzV1T0k3KzhcL1o3bDdqWnN3PT0iLCJtYWMiOiIwMTg5NWY0YWY2N2Y1MjcyMWI5NDhjOTk1Yjk0ZmYzZWRlNGUyNzE4YmM2NjMxMjBlMmQzNTU2MDQ2YmNjZWEwIn0=" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6IitlZ2o4WnMzQjNuMUp2TlZHUmYrU0E9PSIsInZhbHVlIjoiU2Z6V29UVXVjT1VTWlNjbXdmTUlpdz09IiwibWFjIjoiMGI0NTdmZDE1ZmU5NDJjZTNiNjhmMmE0MGU2ODA0Mjg4MDliMWFjZjQxYzNiY2Q2ZmU1YWY0YTZmYWI1YWE2YyJ9" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6Inc4TEdyMEhBMUk5TlhcL0tRcXBJZ2JnPT0iLCJ2YWx1ZSI6IlhaMVdZaXA1dEVGNEdsck9SV1dDeXc9PSIsIm1hYyI6IjFhYmViMjg5NjRhYWNhZjE0MjQ1NDY1ZTE2NDRlNzAzZWM4YTE1OWMyZDY3ZDdlNjRjNTc1NjZhODM5MTE1N2UifQ==">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>30/10/2023 11:42:41</td>
+                            <td>manokaran</td>
+                            <td>manokaran@mailinator.com</td>
+                            <td>No </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6Im42Y2JhaHl2M1J0WEVUMUJxUStlZkE9PSIsInZhbHVlIjoiVlgwdDNrNW1YWndiSUhkbWNRRit6UT09IiwibWFjIjoiZDVhZDE1NDIyZDRhZTY4MDhhODJmYTBkYjQ1YjdhOTg4MjcyOGVkOGU5YmM5MDY5OTVlNjI5YjllOTcxN2Q1YiJ9" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6IlU5MnZVXC9hNnExYXRteDdkaE5EMEtBPT0iLCJ2YWx1ZSI6ImJQVXYxc2kyWTBIdWJVdVZiNjJ3YUE9PSIsIm1hYyI6IjM5YThiNTg2NzdkMjUwMTcwNmU1OWM4NGZmNjM5Y2U0ODNiMmQ1YTJiOTY1NGM0NjdhNjcwOTU2NjlhYmE3ZGMifQ==" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6ImRRbXdxcDM2YnVTMSs0SVd2WExzbkE9PSIsInZhbHVlIjoiOHI2K1A3c3NqYlh5UUFzTE1zWUhmUT09IiwibWFjIjoiYTU0MzYyNjE1NGZmNWFmMjdmODYwYmRmM2I3NWVmMGY0ZDFkOGYxMDI3OGMyYjVlZTQ0NzY2OTg5OGVhZjlhZiJ9">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>25/10/2023 01:11:18</td>
+                            <td>bcr215</td>
+                            <td>sahie4952@gmail.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6Iks0Z3Q2SHBncnQ1ZmNGRENGcXVDTGc9PSIsInZhbHVlIjoiNkRaVHd5R1FEWlNSeDRjRWYzRXdcL0E9PSIsIm1hYyI6IjFlYzQyZjY5Yzc4Yzk2ZTBhMjgyMzg0ZWEzOTg1ZjViZTYyZTEzYTY2NjNhODQ0NWJhYzI1ZWFlMDJhZDNmZTcifQ==" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6Im5aQWR3K1wvcnY0ejFONlhyenZMQnlRPT0iLCJ2YWx1ZSI6Im1VN3VaODQ3K0dpbW1GQUdlclNrd1E9PSIsIm1hYyI6ImU2ZTQ1ODJiNDc5ZDBjODQwMDFhNDE1OGJiNjgzZTI0Mzg5NmEyZmRiMzM4NjY4NDZlMWIwYzA2ZWFlYjlmNDQifQ==" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6Ikk5TExBaWl4YXhVaDVyNFkrQlMyVWc9PSIsInZhbHVlIjoiQXJTOGhQVlNMMkVuMldZTjk2OHlSUT09IiwibWFjIjoiMDdmM2UyNGJiYjllMjc5MzdjZDI1Yjc0OTA5ZWFjZTI4YWRkNDYxZTUwMjRmMzlmMWE1YTQ2YjA4ZmNiMzAxOSJ9">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>16/10/2023 08:13:35</td>
+                            <td>ShortBoss</td>
+                            <td>nelsongumbo1@gmail.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6IkRvaWkxS3ZRMVEyODBlZ1RUY1B5a3c9PSIsInZhbHVlIjoiOHNDNmRPRGpFRWs4Y0JVTGlYZm5qQT09IiwibWFjIjoiYTQ2NDljMDU2YTg5N2Q4Mzc0OGYzNzRlNTgyZjgwNDg0YTE3ZWRjNDFlMWM2ZDg3NDBlNWZiYzllYTM1NTIxOSJ9" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6Ik4zK0x4UFJTTzlONXVuNm50dUJEa2c9PSIsInZhbHVlIjoiUjRJdnZtejdnOUZEb1E1bUJxUGlIUT09IiwibWFjIjoiMDc5NGJlY2E3Y2U5MmUwY2E0ZDQ1YzJkZWRkMTE4MWI3NmU1Y2Y3MTY5NDYyMjE4NTkyZjFlNGJmYzk0YjQ5OSJ9" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6ImVodnVuc09MMmFwdkJGdFpXa3BOaGc9PSIsInZhbHVlIjoiYlNINkk4Nld2S1V2bXdISFlSYTg5UT09IiwibWFjIjoiMDFhNjRiNDUxZWE5MWExMTA0ZGI0N2UxN2JhN2I5MTBmNTc4YmFjNGYwMDkyMWQ1MmIxZmRhMjdkNjhhMjkyMCJ9">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11/10/2023 16:45:23</td>
+                            <td>Shairy</td>
+                            <td>alnoorcreation5.0@gmail.com</td>
+                            <td>No </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6IlRCQWwrS3ZGamxJMUoxYVRSaFVhM1E9PSIsInZhbHVlIjoic3dCdkc5ZVNVbG5PNDk1UDJhK0ozUT09IiwibWFjIjoiNjkzMWI3OGVhYzcxODM4NTc1NDMyN2UyN2I1MWNlMzkxM2U1YjFkYjVhMDNkZmRmNTRhMmY5ZmM3YmZlMzBjYiJ9" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6ImFxTDRGeWxcL2RoSGY4MlBIQWk3NVRBPT0iLCJ2YWx1ZSI6Ik9iSHg1VUwwanZXMVh4bFprZHpLM3c9PSIsIm1hYyI6ImYxMmFmZWRiMzgwNmQzZDUyMDQ0YTBkMjJjMDM2MDE3YmFjMDZiODEyZjM5ZGU2ZDdmNGY2ZGEyMjQ2MTk1MjYifQ==" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6IkhQUTYxcUtiVUlmREFuRGNUNE02bkE9PSIsInZhbHVlIjoiNmdMeEdnZEJoemNEaHNoaFRCRXpsUT09IiwibWFjIjoiNDkwYTViMDY5MWRlNjA5NzRhMTk1NWQ1MWQ5NWI2NmY1Yjc2YmNhNGM0YWNmZWI1ZjVkMjQ2MTVhM2NjOGE2OSJ9">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11/10/2023 13:47:38</td>
+                            <td>peeterson</td>
+                            <td>peeterson@mailinator.com</td>
+                            <td>No </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6IlkzQTllbVZRQ3p6VENYYnEwa3VaUWc9PSIsInZhbHVlIjoiRUN4bDFyaEQzRmZZXC9nWmlyd3drZXc9PSIsIm1hYyI6IjhiNzkyNGY4ZjcxNjFiZGYzZGNlOWY1MDI2MWNjZjIwZDUwMTA2ZDZkMDVjNjA4NzhjNmQzYTU5NzIwZTNiMjYifQ==" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6Ik9FUFVwc1wvOVVNclVXaUhkWEZTM3RBPT0iLCJ2YWx1ZSI6ImNDaGppeUtjeHhpNHRjNWZicUxPc3c9PSIsIm1hYyI6IjAxMjAxNzM3MjkzMWU2MDU1MDM3OWE4MTIxNDk2MzY0NDFjNDA4N2EzYTU0YjM5MWJkN2Q2ZmRiMDhmODk5NjkifQ==" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6IjRXaXRSRTZLYUFDdllPS1FHT2l4SXc9PSIsInZhbHVlIjoiekMrT2l1MlRDSmJmbnhkUWU0TnFudz09IiwibWFjIjoiYzcxOTA4NmJiNzdhMmJjYTBmMzMwMjY4MDg3NTM0ZjRiNTMzODAyNWE2NjA0MDA3MjI1Nzc1MzVmMDhlZjA0NyJ9">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11/10/2023 12:51:39</td>
+                            <td>testck</td>
+                            <td>testck@mailinator.com</td>
+                            <td>No </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6InhOdWtcL0xQNnBUZGFxT0tyYTBpclpnPT0iLCJ2YWx1ZSI6Im1WMW5WaWJ5ZzdtaWQ1ZGVOSWFuNHc9PSIsIm1hYyI6IjZlNGU3NTZiOTdlNGNiZWNjM2YzNzVlODY3OGY1YzZkNjAzMzkzMGE3ZTEzNDdjMTg1MTQzOWFlNzliMzc4MjkifQ==" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6Im1pQTFXUmpGM3BmUEpXWXQ0RDlHRlE9PSIsInZhbHVlIjoiNXR2SEZLTVI1b2w2NFZOZml2ZFBGdz09IiwibWFjIjoiODEwY2IzYWI3NWMwOGY4ZGQzYjg0MmYwODAxNmNkNTU4OTMwOGVkYzM0YzA3NmE2NGI3MTZmYzk0YjhmMjA0YSJ9" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6IlZZbFVobVNkM1ZoMnNGR1RyUXhZT2c9PSIsInZhbHVlIjoiemhYZXliQXBDb1RUYlE0Y3NUdExnUT09IiwibWFjIjoiNDE4Y2E5MGU1NTMzMGEwNDUyZTQ0MDdmYmUwMWU3NjExM2I5YzQwZDBhMDA5N2UwYWQ4MmY3NTk2NTU5YzUzMyJ9">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>11/10/2023 12:50:24</td>
+                            <td>testvk</td>
+                            <td>testvk@mailinator.com</td>
+                            <td>No </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6InNRUFM3MnJDc0dBOTNCOHpFOWg4THc9PSIsInZhbHVlIjoidVJ6SFZFNnpcL00rdGp3bVU5OE9IYVE9PSIsIm1hYyI6Ijk0MDlmNjE1ZTNmYWU0ZjJkMjVmZmQ5MDhiMDM5NWNjZWI2ODg3MGRiM2E3MGQxNTgyNDkwNzkyMzEyZDcxN2QifQ==" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6IitjNXUydjh1Y21pc2xqZm4wTzczbkE9PSIsInZhbHVlIjoiZlpDcHVpditCQXNHeFJIYTZnd2ZmUT09IiwibWFjIjoiNmQ5NjIzNDk4ODFmZmE2ZmFlYTI4NDIyOGU3MjU0MWVmNjQyNTQ2NzMyNDU4ODNhZjNhZWQ2MTEwOWYzZjMzZiJ9" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6Ikh2NXBXeEpPS3Z5XC83amx3Wk9LRjNBPT0iLCJ2YWx1ZSI6Ink0Mm5LT3ZnM005VDdST3o4aEQ4ZEE9PSIsIm1hYyI6IjUxNDI5Yjk2MTU2YjQwMzMyYmRlNWEzOGUxYTE5YTJkNGYxOWQwYjNlYmJlODQ1OWVhZTZiODgxZTBhODUzOTAifQ==">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>20/09/2023 13:52:22</td>
+                            <td>Humza58</td>
+                            <td>ntsontsoaki@gmail.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6IjI5WUVYXC8xQkNRWDlDM0RJSVEzQnlBPT0iLCJ2YWx1ZSI6IlFzbTU4ZktTTXo1TGg2NEZabExUM3c9PSIsIm1hYyI6ImNiZjQzZjNjM2ZkYTAxNzhiYzY0ZDc4OTBjMmI5NzAxNzlhZjAzNmZlY2Q2NjgzYjEyNWVlNDhmNTNiZGZjMjIifQ==" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6ImVBNnE2XC8wWmdsUjh5b1F1RUNkV0pRPT0iLCJ2YWx1ZSI6IldycThTcm11WlpNWW9qTkRUek9OVFE9PSIsIm1hYyI6IjM2ZDEwMzFjNjRkMzU5M2ViYTNjZTJkMzc3YzFjYzkwNjU0MmYzNTdmMDliNjY4ZDc2MGU4YTVhNThiMzE0M2MifQ==" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6IjBcL0lwTEtUN0Q0WnZDMWJcL3o1N0l4Zz09IiwidmFsdWUiOiJTTGpJeWx5dGV5UkROVjdhRlhnUE5BPT0iLCJtYWMiOiIzYWE0MjRmNDgyMTBlMzA0NjJmMGFkZmZlMzJlMGViODU2NGM2NTM0MjY2NTU5YmZjZGNiNDcxMWEwMDgzZGNiIn0=">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18/09/2023 20:53:29</td>
+                            <td>Faymure</td>
+                            <td>faymure@gmail.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6ImdLcmhpcDVtQzdTMHJVbmNZOEhrRlE9PSIsInZhbHVlIjoiM1BWWGNESWRGK0h0THF3SmJ2K2MyUT09IiwibWFjIjoiYjg4NzdkM2FhM2ZiYzI1NGQ0ZDA0ZTNjMWE2OGMxOWYwNzVkZDcyNGFhMmZhOTg5Yzk5NTk2NmNmY2IyN2MwYyJ9" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6ImR4UDRISUJaZFVqa2l5RHM1RU5WQ3c9PSIsInZhbHVlIjoiV3lOR1dxdko1QWFTUUM5d3R1NTNTUT09IiwibWFjIjoiNmY3OWY1Y2E0OTNmMmE5NjliYjNjZjVhOGIwOGU1NTI3YWIwZjQ1ZDgzZGNhODRhOThiYWZiYjI0MGY3NmZjNSJ9" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6IittXC9EWTdxclFwYVwvMTFCQzF3NXpnUT09IiwidmFsdWUiOiJLZERPeUJ2bFpXaDJ5Y2VldzZJT3N3PT0iLCJtYWMiOiIzYmZiMzUyMDkwNmQ0ZTczODQ1NjRiOWI3NjIxYjQwMDRhZDkwNmMxNWUzOWM0YzFhYzNjMzVjOGM1MmZjZTJlIn0=">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>18/09/2023 12:53:24</td>
+                            <td>bosslee</td>
+                            <td>knutviraj@gmail.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6IkpoMmlqUStXZ3RDZFBcL0FsdHUraFhnPT0iLCJ2YWx1ZSI6IlQ2RjdWYTJBYmpjNnowZmQrMnZONWc9PSIsIm1hYyI6Ijk2Mzk3OTdlNDMwYzY1NmNmMWI1M2NkYmQyYWU3YWVmOWJkZjllNWI3ZGYzMDA4ZDU2ZGQ5ZmIzNGYzOGM1NjEifQ==" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6IldtWXpiXC9pQnFJaWlLenBnWWxUWDNRPT0iLCJ2YWx1ZSI6InZBYjV6NHZscjdWUHpOZWl4cFMwR0E9PSIsIm1hYyI6IjZiNGZiNjg5MWY5ZWFhNTM5MjFjZjg1ZTRkMzA3OWU4MmQ0ZGUxYmVhZmJlYTkwOTc4NmQyM2UwNWQzMzQ3NDEifQ==" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6IkxaaXZCSDZSSThXc2tOTDdTUElvVmc9PSIsInZhbHVlIjoiak1iUXJkXC91XC9WSXIxdzhGYU5uamxnPT0iLCJtYWMiOiI4Y2RlM2I2NjcxMmMxMTIzNTA3ZjZjNDAwYmZiM2Q1YjU4MzQ2ODNhMDU5OGUxMWIzYWI5OWU5ZTJlODBiMzA0In0=">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>15/09/2023 12:23:34</td>
+                            <td>testthree</td>
+                            <td>testthree@mailinator.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6IjFqWVRrQjBxM1J1Z2hyZnV5QTFaZlE9PSIsInZhbHVlIjoiTEdYUHFTK1VSVDh2S1pvSVFRTG9CZz09IiwibWFjIjoiNjcxMDQwZDRiY2E2MTQxMjdhMGNiOTg1MGU0M2VjNTllMzlhMWI2NDlhOTI4NTYxZTEzM2ExYzgwZWVjYzg0YSJ9" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6IjJyQmNsRXh2SVwvMlRIVG9cLzA1Z294dz09IiwidmFsdWUiOiJPMElaaFI1U0RXMExua2dQUzJhWlZRPT0iLCJtYWMiOiJhNDFiY2YwMDc3OWFlNzQ1OGZjYTE0ZmYzYWFlOWRlNzhlZDhlZjlmY2E0ODk0Nzc3MDBmMzFmZTJiZDIxZTgzIn0=" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6InVobDRVeWVzUlhjYjlUMzhPTzlPK1E9PSIsInZhbHVlIjoiMjhRZnpkaE5YRHFzdFltMU9HQXB2dz09IiwibWFjIjoiMjY1MzQ4NWQzOWNlYzI0NjgwY2JhNWJkMWMzNWFlNjBmYmNlN2EyNGEyNWY2ZDllNzU1YWFiNWVlNTQxODU5MSJ9">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>13/09/2023 07:54:44</td>
+                            <td>Test</td>
+                            <td>zuiorqjnumabtjkdww@cwmxc.com</td>
+                            <td>Yes </td>
+                            <td>
+                                <a class="btn btn-success btn-sm" href="/users/eyJpdiI6IjJVeGE2eFk5aXJiYUxtQXRcLzJzQVNBPT0iLCJ2YWx1ZSI6Ilo3amtCT0lYZk9kb2YweVRWa2JVNWc9PSIsIm1hYyI6IjMzZGQ5NDFkNjBjOWE5M2UwZjc3MTE1YzViZTk3MTI1NTI0NTRlZGM2ZjY5YTgyYmE3OGY4N2I1ZWYyNmU2MTYifQ==" data-toggle="tooltip" title="View/Edit">
+                                    <i class="fa fa-pencil-square-o"></i>
+                                    View Details
+                                </a>
+                                <a class="btn btn-success btn-sm" href="/addBalance/eyJpdiI6IlNDUW56SVRySWRWUERsVWFxWDRVcWc9PSIsInZhbHVlIjoiaU4yR3RhUkJtU25acDBROUZjNCtcL0E9PSIsIm1hYyI6ImNmZjNmY2ZlMTYxZTEzMzUzMzk1YTJkMTgwMzZmMjI0ZTZmMTNlOTM0ZDAwOTQyYTM2NzIwOGJhODg1ZDczOWYifQ==" data-toggle="tooltip" title="Add Balance">
+                                    <i class="fa fa-plus"></i>
+                                    Update Balance
+                                </a>
+                                <span data-toggle="tooltip" title="Suspend">
+                                    <a class="btn btn-sm btn-danger" data-toggle="modal" data-target="#confirm-delete" data-href="/suspendUser/eyJpdiI6IlQ4cG1TWmtWME5ybjlidlFOMFdrUUE9PSIsInZhbHVlIjoib2FJVUlUSkJmbjdPMkZYVFE2K3RmQT09IiwibWFjIjoiNGJkMDc1YmIzNWY0YTIzMjEzYmIzMDBiODFjZmMyYzJlZWFjYjkwMDhiYTQ2ZDI4MGE4NjU1MzY4ZGQ1M2VmOCJ9">
+                                        <i class="fa fa-ban"></i>
+                                        Suspend
+                                    </a>
+                                </span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="col-md-12 col-sm-12 col-xs-12 nopadding">
+                    <div class="pagination-tt clearfix">
+                        <nav>
+                            <ul class="pagination">
+                                <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                                    <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                                </li>
+                                <li class="page-item active" aria-current="page">
+                                    <span class="page-link">1</span>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="/users?page=2">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="/users?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="modal fade site-modal" id="confirm-delete" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Suspend</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">Do you want to suspend this user?
+			</div>
+            <div class="modal-footer">
+                <a class="btn btn-success btn-ok">Yes</a>
+                <button type="button" class="btn btn-success" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade site-modal" id="confirm-enable" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Enable</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">Do you want to enable this user?
+			</div>
+            <div class="modal-footer">
+                <a class="btn btn-success btn-ok">Yes</a>
+                <button type="button" class="btn btn-success" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+</style>
+<footer class="footer hidden-xs-down">
+    <p>Copyright © 2023 Starbuy. All Rights Reserved.</p>
+</footer>
+</section></main><script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="/vendors/bower_components/popper.js/dist/umd/popper.min.js"></script>
+<script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/vendors/bower_components/jquery.scrollbar/jquery.scrollbar.min.js"></script>
+<script src="/vendors/bower_components/jquery-scrollLock/jquery-scrollLock.min.js"></script>
+<script src="/vendors/bower_components/flatpickr/dist/flatpickr.min.js"></script>
+<script src="/vendors/bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/buttons.print.min.js"></script>
+<script src="/vendors/bower_components/jszip/dist/jszip.min.js"></script>
+<script src="/vendors/bower_components/datatables.net-buttons/js/buttons.html5.min.js"></script>
+<script src="/js/app.min.js"></script>
+<script src="/ckeditor/ckeditor.js"></script>
+<script src="/js/validation.js?v=941"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    $(document).ready(function() {
+        var activeSystemClass = $('.list-group-item.active');
+        $('#system-search').keyup(function() {
+            var that = this;
+            var tableBody = $('.table-list-search tbody');
+            var tableRowsClass = $('.table-list-search tbody tr .coinnamesearch');
+            $('.search-sf').remove();
+            if (tableRowsClass.children(':visible').length == 0 && $('#system-search').val() != '') {
+                tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">No coin found.</td></tr>');
+            }
+            tableRowsClass.each(function(i, val) {
+                var rowText = $(val).text().toLowerCase();
+                var inputText = $(that).val().toLowerCase();
+                if (inputText != '') {
+                    $('.search-query-sf').remove();
+                } else {
+                    $('.search-query-sf').remove();
+                }
+                if (rowText.indexOf(inputText) == -1) {
+                    tableRowsClass.eq(i).parent().hide();
+                } else {
+                    $('.search-sf').remove();
+                    tableRowsClass.eq(i).parent().show();
+                }
+            });
+        });
+    });
+
+    function mySearchFunction(get_id, get_id1) {
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById(get_id1);
+        filter = input.value.toUpperCase();
+        ul = document.getElementById(get_id);
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script>
+<script src="/js/chosen.jquery.min.js"></script>
+<script type="text/javascript">
+    $(".chosen").chosen();
+</script>
+</body></html>
