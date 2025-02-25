@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="csrf-token" content="pr8nU7nrY6iIBMvSZN89bVDYCSQu0DLJ2eE6vbbb">
-  <title>Admin Panel | Starbuy</title>
+  <title>Admin Panel | Bratwin Casino</title>
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
   <link rel="stylesheet"
     href="/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
@@ -91,8 +91,8 @@
                         class="fa fa-arrow-right"></i> USDT </a></li>
                   <li class="@colorsactive"><a href="/deposit/DOT" class=""><i
                         class="fa fa-arrow-right"></i> DOT </a></li>
-                  <li class="@colorsactive"><a href="/deposit/ZAR" class=""><i
-                        class="fa fa-arrow-right"></i> ZAR (3) </a></li>
+                  <li class="@colorsactive"><a href="/deposit/INR" class=""><i
+                        class="fa fa-arrow-right"></i> INR (3) </a></li>
                   <li class="@colorsactive"><a href="/deposit/USD" class=""><i
                         class="fa fa-arrow-right"></i> USD (3) </a></li>
                   <li class="@colorsactive"><a href="/deposit/DAI" class=""><i
@@ -194,8 +194,8 @@
                         class="fa fa-arrow-right"></i> USDT </a></li>
                   <li class="@colorsactive"><a href="/withdraw/DOT" class=""><i
                         class="fa fa-arrow-right"></i> DOT </a></li>
-                  <li class="@colorsactive"><a href="/withdraw/ZAR" class=""><i
-                        class="fa fa-arrow-right"></i> ZAR </a></li>
+                  <li class="@colorsactive"><a href="/withdraw/INR" class=""><i
+                        class="fa fa-arrow-right"></i> INR </a></li>
                   <li class="@colorsactive"><a href="/withdraw/USD" class=""><i
                         class="fa fa-arrow-right"></i> USD </a></li>
                   <li class="@colorsactive"><a href="/withdraw/DAI" class=""><i
@@ -297,8 +297,8 @@
                         class="fa fa-arrow-right"></i> USDT </a></li>
                   <li class="@colorsactive"><a href="/internalWithdraw/DOT" class=""><i
                         class="fa fa-arrow-right"></i> DOT </a></li>
-                  <li class="@colorsactive"><a href="/internalWithdraw/ZAR" class=""><i
-                        class="fa fa-arrow-right"></i> ZAR </a></li>
+                  <li class="@colorsactive"><a href="/internalWithdraw/INR" class=""><i
+                        class="fa fa-arrow-right"></i> INR </a></li>
                   <li class="@colorsactive"><a href="/internalWithdraw/USD" class=""><i
                         class="fa fa-arrow-right"></i> USD </a></li>
                   <li class="@colorsactive"><a href="/internalWithdraw/DAI" class=""><i
@@ -444,7 +444,7 @@
                     class="fa fa-arrow-right"></i> Withdraw Commission</a></li>
 
               <li class="@colorsactive"><a href="/tradeCommissionSettings" class=""><i
-                    class="fa fa-arrow-down"></i> P2P Trade Commission</a></li>
+                    class="fa fa-arrow-down"></i> Bet Commission</a></li>
             </ul>
           </li>
 
@@ -464,7 +464,7 @@
             </a>
             <ul>
               <li class="@photogalleryactive ">
-                <a href="/adminBank/ZAR"><i class="fa fa-arrow-right"></i> ZAR</a>
+                <a href="/adminBank/INR"><i class="fa fa-arrow-right"></i> INR</a>
               </li>
               <li class="@photogalleryactive ">
                 <a href="/adminBank/USD"><i class="fa fa-arrow-right"></i> USD</a>
@@ -601,6 +601,76 @@
           </div>
         </a>
       </div>
+      <div class="quick-stats listview2">
+        <a href="/kycData/Basic" data-toggle="tooltip" title="" class="quick-stats__item"
+            title="KYC : 19">
+            <div class="quick-stats__info col-md-8">
+                <h2><b>KYC - 19</b></h2>
+                <small>Pending : 7</small>
+                <small>Rejected : 0</small>
+                <small>Verified : 12</small>
+            </div>
+            <div class="col-md-4 text-right">
+                <h1><i class="zmdi zmdi-badge-check" aria-hidden="true"></i></h1>
+            </div>
+        </a>
+        <a href="/withdraw/BTC" data-toggle="tooltip" title="" class="quick-stats__item"
+            title="Withdraw : 14">
+            <div class="quick-stats__info col-md-8">
+                <h2><b>Withdraw - 14</b></h2>
+                <small>Completed : 3</small>
+                <small>Pending : 11</small>
+            </div>
+            <div class="col-md-4 text-right">
+                <h1><i class="fa fa-arrow-up"></i></h1>
+            </div>
+        </a>
+        <a href="#" data-toggle="tooltip" class="quick-stats__item" title="Overall Coins : 4">
+            <div class="quick-stats__info col-md-8">
+                <h2><b>Overall Coins - 45</b></h2>
+                <small>Crypto : 42</small>
+                <small>Fiat : 3</small>
+            </div>
+            <div class="col-md-4 text-right">
+                <h1><i class="fa fa-connectdevelop"></i></h1>
+            </div>
+        </a>
+    </div>
+    <div class="quick-stats listview2">
+      <a href="/kycData/Basic" data-toggle="tooltip" title="" class="quick-stats__item"
+          title="KYC : 19">
+          <div class="quick-stats__info col-md-8">
+              <h2><b>KYC - 19</b></h2>
+              <small>Pending : 7</small>
+              <small>Rejected : 0</small>
+              <small>Verified : 12</small>
+          </div>
+          <div class="col-md-4 text-right">
+              <h1><i class="zmdi zmdi-badge-check" aria-hidden="true"></i></h1>
+          </div>
+      </a>
+      <a href="/withdraw/BTC" data-toggle="tooltip" title="" class="quick-stats__item"
+          title="Withdraw : 14">
+          <div class="quick-stats__info col-md-8">
+              <h2><b>Withdraw - 14</b></h2>
+              <small>Completed : 3</small>
+              <small>Pending : 11</small>
+          </div>
+          <div class="col-md-4 text-right">
+              <h1><i class="fa fa-arrow-up"></i></h1>
+          </div>
+      </a>
+      <a href="#" data-toggle="tooltip" class="quick-stats__item" title="Overall Coins : 4">
+          <div class="quick-stats__info col-md-8">
+              <h2><b>Overall Coins - 45</b></h2>
+              <small>Crypto : 42</small>
+              <small>Fiat : 3</small>
+          </div>
+          <div class="col-md-4 text-right">
+              <h1><i class="fa fa-connectdevelop"></i></h1>
+          </div>
+      </a>
+  </div>
 
       <div class="quick-stats listview2">
         <a href="/tradeHistory/BUY/ETH/POI" data-toggle="tooltip" title=""
@@ -642,7 +712,7 @@
       <div class="tranferboxflex">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-body">
+            <!--<div class="card-body">
               <h4 class="card-title">Exchange Transaction Details</h4>
               <div class="table-responsive site-scroll-f">
                 <table class="table">
@@ -749,7 +819,7 @@
                       <td class="text-right">0.00000000</td>
                     </tr>
                     <tr>
-                      <td>ZAR</td>
+                      <td>INR</td>
                       <td class="text-right">4051.68000000</td>
                       <td class="text-right">0.00000000</td>
                       <td class="text-right">0.00000000</td>
@@ -1066,7 +1136,7 @@
                   </tbody>
                 </table>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </div>
@@ -1087,21 +1157,21 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td>19/09/2023 11:57:33</td>
+                      <td>19/09/2025 11:57:33</td>
                       <td>Faymure</td>
                       <td>faymure@gmail.com</td>
                       <td><a class="btn btn-success btn-xs" href="/kyc_details/17"><i
                             class="fa fa-pencil-square-o"></i> View </a> </td>
                     </tr>
                     <tr>
-                      <td>13/09/2023 08:00:26</td>
+                      <td>13/09/2025 08:00:26</td>
                       <td>Test</td>
                       <td>zuiorqjnumabtjkdww@cwmxc.com</td>
                       <td><a class="btn btn-success btn-xs" href="/kyc_details/14"><i
                             class="fa fa-pencil-square-o"></i> View </a> </td>
                     </tr>
                     <tr>
-                      <td>08/09/2023 11:57:56</td>
+                      <td>08/09/2025 11:57:56</td>
                       <td>qwer123123</td>
                       <td>akhim9764@gmail.com</td>
                       <td><a class="btn btn-success btn-xs" href="/kyc_details/12"><i
@@ -1117,7 +1187,7 @@
     </section>
     </style>
     <footer class="footer hidden-xs-down">
-      <p>Copyright © 2023 Starbuy. All Rights Reserved.</p>
+      <p>Copyright © 2025 Bratwin Casino. All Rights Reserved.</p>
     </footer>
     </section>
   </main>

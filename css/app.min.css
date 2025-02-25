@@ -2070,28 +2070,14 @@ fieldset[disabled] a.btn {
 
 .btn-success {
   color: #ffffff;
-  background: linear-gradient(
-    to right,
-    #dab357,
-    #c3913d,
-    #ba8434,
-    #c18e3d,
-    #cca04d
-  );
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
   font-weight: 500;
   border: 0px;
 }
 
 .btn-success:hover {
   color: #262626;
-  background: linear-gradient(
-    to right,
-    #dab357,
-    #c3913d,
-    #ba8434,
-    #c18e3d,
-    #cca04d
-  );
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
 }
 
 .btn-success.disabled,
@@ -2104,26 +2090,12 @@ fieldset[disabled] a.btn {
 .btn-success:active,
 .show > .btn-success.dropdown-toggle {
   color: #010c42;
-  background: linear-gradient(
-    to right,
-    #dab357,
-    #c3913d,
-    #ba8434,
-    #c18e3d,
-    #cca04d
-  );
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
 }
 
 .btn-info {
   color: #ffffff;
-  background: linear-gradient(
-    to right,
-    #dab357,
-    #c3913d,
-    #ba8434,
-    #c18e3d,
-    #cca04d
-  );
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
   border: 0px;
   font-weight: 500;
 }
@@ -2150,28 +2122,14 @@ fieldset[disabled] a.btn {
 
 .btn-warning {
   color: #ffffff !important;
-  background: linear-gradient(
-    to right,
-    #dab357,
-    #c3913d,
-    #ba8434,
-    #c18e3d,
-    #cca04d
-  );
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
   border: 0px;
   font-weight: 500;
 }
 
 .btn-warning:hover {
   color: #262626;
-  background: linear-gradient(
-    to right,
-    #dab357,
-    #c3913d,
-    #ba8434,
-    #c18e3d,
-    #cca04d
-  );
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
 }
 
 .btn-warning.disabled,
@@ -7939,14 +7897,7 @@ a.text-danger:hover {
 
 .btn-light {
   color: #ffffff;
-  background: linear-gradient(
-    to right,
-    #dab357,
-    #c3913d,
-    #ba8434,
-    #c18e3d,
-    #cca04d
-  );
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
 }
 
 .btn {
@@ -7964,7 +7915,7 @@ a.text-danger:hover {
   background-color: #f7931e;
   background: linear-gradient(
     152deg,
-    #dab357,
+    #5dda57,
     #c3913d,
     #ba8434,
     #c18e3d,
@@ -9300,10 +9251,10 @@ textarea {
   color: #fff;
   display: flex;
   align-items: center;
-  background: #858381;
+  background: #828595;
   padding-right: 1.5rem;
   transition: background-color 1s, box-shadow 1s;
-  box-shadow: -11px -11px 29px -6px #836c4b;
+  box-shadow: -11px -11px 29px -6px #4e834b;
 }
 
 .header::after {
@@ -9317,8 +9268,8 @@ textarea {
 }
 
 .header--scrolled {
-  background-color: #858381;
-  box-shadow: 0px 9px 10px -6px #858381;
+  background-color: #828595;
+  box-shadow: 0px 9px 10px -6px #828595;
 }
 
 .navigation-trigger {
@@ -9735,14 +9686,7 @@ textarea {
   height: 100%;
   overflow: hidden;
   z-index: 101;
-  background: linear-gradient(
-    180deg,
-    #858381,
-    #3a3838,
-    #383125,
-    #63533b,
-    #88704d
-  );
+  background: linear-gradient(180deg, #818581, #383a38, #263825, #40633b, #50884d);
   padding: 5px 10px;
   box-shadow: -1px 4px 19px -7px #767473;
 }
@@ -9837,7 +9781,7 @@ textarea {
   cursor: pointer;
   font-size: 14px;
   padding: 1rem;
-  background: linear-gradient(to right, #c3913d, #ba8434, #c18e3d, #cca04d);
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
   transition: background-color 0.3s;
   border-radius: 5px !important;
 }
@@ -9901,7 +9845,7 @@ textarea {
 
 .navigation > .navigation__active > a,
 .navigation > .navigation__sub--active > a {
-  color: #dab357;
+  color: #5dda57;
 }
 
 .navigation__sub > a {
@@ -9935,7 +9879,7 @@ textarea {
 }
 
 .navigation__sub .navigation__active > a {
-  color: #dab357;
+  color: #5dda57;
 }
 
 .toggle-switch {
@@ -13507,14 +13451,7 @@ select:required {
 .quick-stats__item i {
   color: #ffffff;
   font-size: 16px;
-  background: linear-gradient(
-    to right,
-    #dab357,
-    #c3913d,
-    #ba8434,
-    #c18e3d,
-    #cca04d
-  );
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
   padding: 10px;
   border-radius: 7px;
 }
@@ -13545,7 +13482,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
 
   .header {
-    background: linear-gradient(to right, #858381, #3c3428, #63533b, #88704d);
+    background: linear-gradient(to right, #828595, #3c3428, #63533b, #88704d);
     width: 100%;
   }
 
@@ -13601,14 +13538,7 @@ textarea::placeholder {
 }
 
 label.custom-file-upload {
-  background: linear-gradient(
-    to right,
-    #dab357,
-    #c3913d,
-    #ba8434,
-    #c18e3d,
-    #cca04d
-  );
+  background: linear-gradient(to right, #5dda57, #3ec33d, #28a745, #4ec13d, #67cc4d);
   padding: 6px 14px;
   color: #fff;
   cursor: pointer;
@@ -13823,7 +13753,7 @@ span.num {
   height: 100vh;
   background: linear-gradient(
     144deg,
-    #858381,
+    #828595,
     #413e3b,
     #131313,
     #131313,
