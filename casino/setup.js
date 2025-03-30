@@ -82,7 +82,7 @@ async function runCasinoWizard() {
             type: "input",
             name: "vpsHostname",
             message: "Enter the VPS hostname for deployment (e.g., vps.example.com):",
-            validate: input => /^(?!-)[A-Za-z0-9-]{1,63}(?=-|$)/.test(input) ? true : "Invalid VPS hostname format.",
+            validate: input => /^(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)$/.test(input) ? true : "Invalid VPS hostname format.",
         },
         {
             type: "password",
